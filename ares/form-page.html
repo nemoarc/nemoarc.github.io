@@ -1,0 +1,40 @@
+
+<html>
+<head>
+<title>PHP form to email sample form</title>
+</head>
+
+<body>
+<center>
+<!-- Start code for the form-->
+<form method="post" name="myemailform" action="form-to-email.php">
+	<p>
+		<label for='name'>Enter Name: </label><br>
+		<input type="text" name="name">
+	</p>
+	<p>
+		<label for='email'>Enter Email Address:</label><br>
+		<input type="text" name="email">
+	</p>
+	<p>
+		<label for='message'>Enter Message:</label> <br>
+		<textarea name="message" rows="9" cols="30"></textarea>
+	</p>
+	<input type="submit" name='submit' value="Submit">
+  <button onclick="goBack()">Cancel</button>
+</form>
+
+<script language="JavaScript">
+function goBack() {
+    window.history.back();
+}
+
+var frmvalidator  = new Validator("myemailform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
+<br>
+</center>
+</body>
+</html>

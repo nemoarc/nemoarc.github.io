@@ -1,0 +1,16 @@
+This folder to contain the web pages and files for ARES to function
+
+index.html - main page
+NBEMS.html - tells about NBEMS with links to pdf docs already downloaded
+FSQ.html - tells about FSQ and its rising roll in ARES
+MONETS.html - ALl the mo and regional nets of importance and how to access
+other.html - misc
+FreqNets.html - List off frequencies to be used for testing or actual emergencies.
+FLDIGI.html - notes on setup and settings
+Places.html - links and where to find info
+
+dos2unix (filename)
+
+geany editor
+
+checks

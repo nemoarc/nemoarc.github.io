@@ -1,0 +1,150 @@
+Skip to site navigation (Press enter)
+[digitalradio] New Illinois Packet Radio Group
+Mark Thompson Sun, 09 Aug 2009 07:51:36 -0700
+
+Over the last couple years there has been a resurgence in interest & 
+activity in packet radio. 
+The interest is not in creating the former BBSes & networks of the 1990s, but 
+instead in doing things packet radio is uniquely good at. 
+
+Packet radio's resurgence started with the new application, APRS which uses 
+packet radio. In some areas the application 
+DX PacketCluster provides access via packet. More recently applications like 
+Output & Winlink are making use of packet radio. 
+
+As is indicated in the attached email, Illinois ARES is planning to implement 
+the Winlink application state-wide using packet radio for user access. 
+However, the Illinois ARES Digital Working Group is apparently more focused on 
+the ARES implementation of Winlink and 
+is not the appropriate forum for general discussion of packet radio or other 
+digital modes. 
+
+So I have created a new group, Illinois Packet Radio. The focus of the group 
+will be to discuss packet radio usage in Illinois 
+including applications using packet radio, such as APRS, Outpost, Winlink, DX 
+PacketCluster, etc. 
+
+We hope to also create a database of packet radio usage in the state. 
+
+The Illinois Packet Radio group is available at: 
+http://groups.yahoo.com/group/IllinoisPacketRadio/
+
+Look foward to your participation in the group. 
+
+Thanks. 
+
+73, Mark, WB9QZB 
+
+By the way, the Illinois D-STAR yahoo group, is also available at: 
+http://groups.yahoo.com/group/IllinoisD-STAR
+
+
+----- Forwarded Message ----
+From: Brad Pioveson W9FX <w...@verizon.net>
+To: il_ares_...@yahoogroups.com; illinois_a...@yahoogroups.com
+Sent: Wednesday, August 5, 2009 7:30:18 AM
+Subject: [IL_ARES_DWG] Once again. . .
+
+With apologies for the dual reflector post, it is important that this 
+message get out to all concerned.
+
+Regarding the Illinois ARES Digital Communications Network initiative:
+Let's go through the motions one more time.  I have been
+given to understand that there are those who have misunderstood the recent
+efforts to develop a digital EMCOMM system for Illinois.
+
+Here are the facts, plain and simple:
+
+The effort underway is to develop an Illinois ARES digital communications
+network.  Note the acronym - ARES.  That acronym refers to the Amateur Radio
+Emergency Service.  That third word is the operative term in the phrase.
+This will be an emergency digital communications system.  This effort is
+neither intended to supplant, extend, nor change the frequency of operation
+of any existing digital activity anywhere in this state (or, bordering
+states).  We are neither trying to usurp nor hinder a resource for DX packet
+cluster users, nor are we trying to provide a digital outlet for those
+without high-speed Internet systems to obtain their daily dose of email.
+The network we are building is for the expressed purpose of providing a
+digital conduit by which emergency communications traffic - data - can be
+moved between any two points in Illinois.
+
+This network will be on a discrete frequency.  This frequency is far from
+any of the current packet radio activity of which I am aware in the state of
+Illinois.  The frequency assignment we have been handed can be found in the
+IRA's 2006 document, available online, at 
+http://www.ilra.net:80/Band-Plan-2006.html
+If you take the time to follow the link, you'll see '145.610  ARES 
+Statewide Packet.' I didn't attend the meeting that preceded that publication, 
+and, it is not 
+an issue for me. As far as I'm concerned, it's as suitable a frequency for our 
+purposes as
+any other, and, it meets the criterion of being well removed from 145.01,
+145.05, 144.39 and 147.555.  Users of those particular frequencies need not
+worry about interference from the ARES network.
+
+We're not looking to develop a system of BBS's.  We're not looking to move
+routine email around the state.  We are not putting a network together to
+facilitate classified ham ads or hamfest announcements.  We are developing
+an emergency digital communications system.  We hope that it will be used
+enough on a weekly or daily basis to ensure that the network operates 
+properly, but, again, we're not building a replacement for the Internet.
+
+This network will offer 1200 baud VHF packet radio connectivity as a minimum
+standard.  If node operators (RMS Packet/Relay stations) have 9600 baud
+capabilties, so much the better.  But, 1200 baud is the least common
+denominator.  Joe Ham can get on 1200 baud packet radio with any 2 meter FM
+rig and a sound card equipped PC running AGWPE TNC-emulation software.  It
+isn't the prettiest lash up, and, certainly not the most efficient, but, it
+will work, and, that gives us our starting point and minimum standard.
+
+The network will operate using Winlink 2000 RMS Packet/RMS Relay software
+and the current iteration of UIView software.  These can be run
+simultaneously on a Windows XP/Vista platform using AGWPE software running
+concurrently.  I understand that RMS Packet/Relay and APRS applications can 
+also be run under the Linux OS.
+
+Individuals will use client software suitable for use with the Winlink 2000
+and APRS servers.  Client software for messaging with the Winlink systems
+can be either Airmail or Paclink.  Those are the only two client appications
+that are currently supported, to the best of my knowledge, but, I am not a
+Winlink guru and cannot speak with authority to that issue.  I defer to the
+APRS crowd as to what soft/hard-ware applications are currently in vogue for
+use with that system.
+
+RMS Packet, RMS Relay, Airmail, Packlink, AGWPE and UIView32 are all free
+software applications.
+
+Will this network be state of the art?  Not likely - we're using existing
+technology and assets; some of the hardware has been around for a couple of
+decades, in fact.  1200 baud is a slow crawl compared to modern Internet
+broadband connections. Even 56k dial-up connection speeds leave 1200 baud in
+the dust.  But, we're talking about an emergency communications system - a
+'when all else HAS failed' system.  And, compared to voice or CW, 1200 baud
+is pretty speedy.
+
+
+Brad Pioveson, W9FX
+ARRL Illinois Section Emergency Coordinator
+301 Kirsch St.
+Benton, IL  62812-1706
+home:  618..439.9262
+cell:  618.435.0213
+SMS:  6184350...@vtext.com
+email:  w...@verizon.net
+
+
+      
+Previous messageView by threadView by dateNext message
+Reply via email to
+ Mark Thompson 
+The Mail Archive
+
+Search digitalradio
+Submit
+The Mail Archive home
+digitalradio - all messages
+digitalradio - about the list
+Expand
+Previous message
+Next message
+The Mail Archive home Add your mailing list FAQ Support Privacy 268193.14897.qm@web112210.mail.gq1.yahoo.com

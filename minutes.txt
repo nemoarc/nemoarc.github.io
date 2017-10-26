@@ -1,0 +1,28 @@
+Nemoarc Meeting Minutes 11-12-16
+
+The December meeting is scheduled to begin at on the 11th, 2 PM at Coltons Steak House on the south side. We have our own room reserved or maybe it was some tables.
+
+The 440 repeater is still a work in progress.
+
+Perhaps in January, Don will bring in software to program the members wrt54gs hubs for the proposed mesh network.
+
+Dave Krueger released his ham class schedule;
+Tech class - Jan 3 @ 630 PM at the ADHD classroom for 6 weeks
+Gen class - Jan 5 @ 630 PM at the ADHD classroom for 8 weeks
+I believe he mentioned a total cost including taking the test of $45.
+
+Calling the ISS with Ham Radio in conjunction with a school class was discussed.
+
+Further discussion on tracking ISS was then held. I use these 2 links for real time tracking.
+https://eol.jsc.nasa.gov/ESRS/HDEV/
+http://iss.astroviewer.net/
+https://www.ustream.tv/embed/17074538?html5ui;autoplay=1
+http://wsn.spaceflight.esa.int/iss/index_portal.php
+
+I (Patrick) asked about starting a daytime net for those who can't seem to get a way for the evening nets. Go for it and try it was the overall answer.
+
+Then packet radio was discussed and how it is making a comeback, especially for emergency work. It was mentioned that packet support is now part of fldigi, but maybe not. But, the fldigi web site does have 'easy packet' available. Other programs that do packet, includes Mixw and HRD
+
+Finally several hams gathered round a dead 10/12 meter radio to troubleshoot the "funny" smell coming out.
+
+Dave Krueger also demoed packet radio from his vehicle.
