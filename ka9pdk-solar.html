@@ -2,26 +2,38 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
 <head>
 
+
     
+  
   <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
 
+
     
     
-  <title>Projects- NEMOARC</title>
+  
+  
+  <title>KA9PDK interface project- NEMOARC</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 
+
     
+  
   <meta content="Alex Fleak" name="author" />
 
-    
-  <meta content="Member projects page" name="description" />
 
     
+  
+  <meta content="computer to rig interface for digital modes" name="description" />
+
+
+    
+  
   <meta content="HAM Radio Make Homebrew Electronics fieldday" name="keywords" />
 </head>
 
 
-  <body>
+<body>
+
 
     
 <div class="header1">
@@ -32,13 +44,17 @@
           
 <div class="nav-bg-inner"><a href="/index.html" class="nav">Home</a> |
             <a href="/index.html" class="nav"><strong></strong></a><strong><a class="nav" href="photos.html">Photos</a> | <a class="nav" href="licensing.html">Get
-                Licensed</a> | <a class="nav" href="ares/index.html">ARES</a>| <a class="nav" href="fieldday.html">Field Day</a> | <a class="nav" href="projects.html">Member Projects</a> |&nbsp;<span style="color: rgb(0, 102, 153);"></span></strong></div>
+                Licensed</a> | <a class="nav" href="ares/index.php">ARES</a>| <a class="nav" href="fieldday.html">Field Day</a> | <a class="nav" href="projects.html">Member Projects</a> |&nbsp;<span style="color: rgb(0, 102, 153);"></span></strong></div>
+
 
         </div>
 
+
       </div>
 
+
     </div>
+
 
     
 <div class="header2">
@@ -46,666 +62,883 @@
 <h1><span style="font-family: Verdana;">Northeast Missouri Amateur Radio
           Club</span></h1>
 
+
       
 <div style="margin-top: -5px;">Serving Adair County and the Surrounding
         Area</div>
 
+
     </div>
+
 
     
 <div class="main_holder">
       
 <div class="left_column">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
 
+
         
 <div style="text-align: center;">
           
-<h2><strong><span style="font-weight: bold;">Member Projects <br />
+<h2><strong><span style="font-weight: bold;">KA9PDK Solar Charge Controller&nbsp; <br />
+
 
               </span></strong></h2>
 
+
         </div>
 
-        
-<h4>Members of our club are always building something new or restoring
-          something old. <i>Members if you have a project you want to show off
-            email nemoarc@gmail.com</i></h4>
-
-        
-<h4>Here are a few of them for you to peruse.</h4>
-
-        
-<ul>
-
-          <li>
-            
-    <h4><a href="http://qsl.net/kd0yte/Projects.html" title="kd0yte projects">KD0YTE's
-                Project Page</a>.</h4>
-
-          </li>
-
-          <li>
-            
-    <h4><a href="ka9pdk-interfaxe.html">KA9PDK's PC to rig interface</a><br />
-
-            </h4>
-
-          </li>
-
-          <li>
-            
-    <h4><a title="drake r-4b" href="kd0sgu-1.html">KD0SGU's Drake R4B
-                project</a></h4>
-
-          </li>
-
-          <li>
-            
-    <h4><a href="ke0hvu-1.html">KE0HVU's Hallicrafter S-120 restoration</a><br />
-
-            </h4>
-
-            <br />
-
-          </li>
-
-        <li>
-            
-    <h4><a href="ka9pdk-solar.html">KA9PDK's Solar charge controller </a><br />
-
-            </h4>
-
-            <br />
-
-          </li>
-
-</ul>
 
         
 <p><br />
 
+
         </p>
+
 
         
 <p><br />
 
+
         </p>
 
-        <br />
 
         <br />
 
-        <br />
 
         <br />
 
-        <br />
+
+        <span style="font-weight: bold;"></span><span style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 12.8px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"></span>
+<p style="width: 1064px;"><big><big>Here is the schematic of my current
+solar controller. It seems to work fairly well as all the smarts are in
+the arduino controller. On one of the several I have built, i actually
+paralleled 2 MOSFET to ease the burden on them. Jury still out on if it
+was worth it. The T for thermistor was a big help on keeping things
+from going to crazy. A standard 10K thermistor does quite well at
+monitoring heat sink temp. I just use a small drop of mixed up epoxy to
+mount it on heat sink next to the MOSFET. After much reading, it seemed
+to me, that while most folks insisted on charging a SLA or AGM battery
+using a current limiting circuit, some also pointed out that if voltage
+monitoring could be utilized, then put the charge to the battery until
+it was full and then cut back. This is my approach and I charge until
+battery reads a certain voltage and then drop back to a float voltage.
+Been working fine for me since beginning of year or was it late last
+year. Time flies and I have too many projects to remember. Note also
+that I use a NRF24L01 radio transceiver to send a status report to my
+central controller. You could cut that part out of the attached program
+if not utilized. Get back to me for more info on utilizing the radio
+section if needed. Have 10 different one one running here on the
+homestead. Note also that this should work for any kind of charging
+voltage input.</big></big></p>
+
+
+        <img style="width: 687px; height: 283px;" alt="schematic" src="images/MySolar%20-%205.png" /><br />
+
 
         <br />
 
-        <br />
 
         <br />
 
-        <br />
 
         <br />
 
-        <br />
 
         <br />
 
-        <br />
 
         <br />
 
-        <br />
+
+        <big><big><a href="SolChg-1art.ino">arduino sketch for the controller</a></big></big><br />
+
 
         <br />
 
-        <br />
 
         <br />
 
-        <br />
 
-        <br />
+        I have asked Patrick for a parts list and will add it here soon.<br />
 
-        <br />
-
-        <br />
-
-        <br />
-
-        <br />
-
-        <br />
-
-        <br />
 
       </div>
 
-      
-<div class="mid_column" style="width: 237px;"> <iframe src="sidebar.html" frameborder="0" height="1800" width="236"></iframe> </div>
 
       
 <div class="right_column">
         
 <h2><strong><span style="font-weight: bold;"><br />
 
+
             </span></strong></h2>
 
+
         &nbsp; <br />
+
 
         
 <p><br />
 
+
           <strong><span style="font-weight: bold;"></span></strong></p>
+
 
         
 <p> </p>
 
+
         
 <p><br />
 
+
           <br />
+
 
           <a href="/index.html"><br />
 
+
           </a></p>
+
 
       </div>
 
+
     </div>
+
 
     
 <div class="footer"><br />
 
+
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       <br />
 
+
       <br />
+
 
       &copy; 2015 Nemoarc.org All rights reserved. Web design from a template by:
       <!-- PLEASE DON'T REMOVE THE LINK --><a href="http://www.allartdirectory.com/" title="The All Art Directory">All Art Directory</a><!-- THANKS AGAIN! -->
     </div>
+
 
   
 </body>
