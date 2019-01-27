@@ -5,6 +5,8 @@
 
 
 
+
+  
   
   
   
@@ -13,6 +15,8 @@
 
 
 
+
+  
   
   
   
@@ -20,9 +24,12 @@
 
 
 
+
   
 
 
+  
+  
   
   
   
@@ -34,6 +41,8 @@
 
 
 
+
+  
   
   
   
@@ -42,6 +51,8 @@
 
 
 
+
+  
   
   
   
@@ -50,6 +61,8 @@
 
 
 
+
+  
   
   
   
@@ -58,6 +71,7 @@
 
 
 <body>
+
 
 
 
@@ -74,17 +88,21 @@ Projects</a> |&nbsp;<span style="color: rgb(0, 102, 153);"></span></strong></div
 
 
 
-</div>
-
-
-
 
 </div>
 
 
 
 
+
 </div>
+
+
+
+
+
+</div>
+
 
 
 
@@ -96,13 +114,16 @@ Missouri Amateur Radio Club</span></h1>
 
 
 
+
 <div style="margin-top: -5px;">Serving Adair County and
 the Surrounding Area</div>
 
 
 
 
+
 </div>
+
 
 
 
@@ -113,7 +134,9 @@ the Surrounding Area</div>
 
 
 
+
 <br />
+
 
 
 
@@ -124,7 +147,9 @@ the Surrounding Area</div>
 
 
 
+
 </div>
+
 
 
 
@@ -133,9 +158,11 @@ the Surrounding Area</div>
 stands for Automatic Packet Reporting system. It is an excellent way
 for your family to keep track of you while your on the road. And useful
 for public service events as well.<br />
+
 However their need to be igate's set up in each area you are traveling
 through so that your position gets picked up and reported. So it is
 very helpful for this software to be setup in a fixed location as well.<br />
+
 
 
 </big>
@@ -143,21 +170,27 @@ very helpful for this software to be setup in a fixed location as well.<br />
 <big></big></big></div>
 
 
+
 <div style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 12.8px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); text-align: left;"><big>&nbsp;<big><br />
+
 
 
 What you will need to get started</big><br />
 
 
+
 <br />
+
 1. A 2 meter fm radio which can be interfaced to a computer. This could
 be as simple &nbsp;as a baofeng HT or as expensive as you want to go. A
 radio that has gps built in is a plus but their are work arounds.<br />
 
 
-2. An interface to the radio. many radios have a usb interface built in
+
+2. An interface to the radio, many radios have a usb interface built in
 but if not you can use a signal link or it isn't hard to homebrew
 &nbsp;an interface<br />
+
 3. A GPS device to allow the software to report your position. it can
 be a gps usb dongle a tiny trak device or a radio with built in gps.
 Radios with gps built in include the Kenwood D710 and TH-D72a hand held
@@ -165,10 +198,13 @@ Radios with gps built in include the Kenwood D710 and TH-D72a hand held
 really don't need the gps features. just set your location by hand.<br />
 
 
+
 4. Direwolf which is a software TNC for packet radio. I am using version 1.5 as of this writing. Get it at <a href="https://github.com/wb2osz/direwolf/releases">https://github.com/wb2osz/direwolf/releases</a><br />
 
 
+
 5. APRS Software for communication with the radio and the internet..I will show how to setup <a href="http://aprsisce.wikidot.com/">APRSISCE</a><br />
+
 
 
 6. If you have an Icom radio such as a 7100&nbsp;etc. that uses a
@@ -176,35 +212,36 @@ usb port to interface to your computer you will need one more peice of
 software <a href="http://www.cantab.net/users/john.wiseman/Documents/CAT7200.html">CAT7200</a> which allows you to assert ptt to the radio via cat commands<br />
 
 
+
 <br />
 
-
-I watched this <a href="https://youtu.be/M6qKqxL59_w">video</a> to
-learn how to configure direwolf with winlink express for my radio but
-to distill it down to use with any radio do the following<br />
 
 
 <br />
+
 
 
 <span style="font-weight: bold;">Setting up direwolf</span><br />
 
 
-Download direwolf from the above link and extract it to a folder of your choosing. I put mine in C:\direwolf<br />
 
+Download direwolf from the above link and extract it to a folder of your choosing. I put mine in C:\direwolf.<br />
+Go to that directory and right &nbsp;click on direwolf.conf and select edit with notepad or your favorite text editor.<br />
 
-go to that directory and right &nbsp;click on direwolf.conf and select edit with notepad or your favorite text editor<br />
 
 
 In direwolf.conf any line starting with a # is a comment remove the # to make it so it can be read by direwolf.<br />
 
 
-There are three things we need to add. look for a line that reads
+
+There are four things we need to add. Look for a line that reads
 MYCALL NOCALL remove the pound sign and Change the NOCALL to read as
-your callsign use uppercase letters<br />
+your callsign use uppercase letters.<br />
+
 
 
 <br />
+
 
 
 Next make sure the line that says MODEM 1200 is uncommented.I believe
@@ -213,21 +250,25 @@ uncommented and make note of the port number used. We will need it
 for&nbsp; setting up APRSICE in a bit.<br />
 
 
+
 <br />
 
 
-Next find a line that begins ADEVICE usb&nbsp;remove the # and we are going to change the usb to what your sound device is<br />
+
+Next find a line that begins ADEVICE usb&nbsp;remove the # and we are going to change the usb to what your sound device is.<br />
 
 
-For windows 10 &nbsp;If you right click on the voleme icon in your
+
+For windows 10, &nbsp;If you right click on the voleme icon in your
 system tray (looks like a speaker in lower right area of desktop) then
-click sounds you will see&nbsp; &nbsp; your sound properties dialog.
+click sounds you will see&nbsp;your sound properties dialog.
 click on the playback tab and find the sound device for your interface.
 <br />
 
 
-What that device is named is&nbsp;what we will use. you can actually
-change this name if you right click click properties &nbsp;then type in
+
+What that device is named is&nbsp;what we will use. You can actually
+change this name if you right click click properties, &nbsp;then type in
 a new name in the box. I highly reccomend you do this as many usb
 devices will be named usb 1 usb 2 etc. and this gets confusing. I
 rename mine to match the name of my radio. &nbsp;Do the same with the
@@ -235,19 +276,22 @@ recording device under the recording tab. For earlier windows this same
 thing can be done but the programs are accessed a bit differently.<br />
 
 
+
 Back to direwolf.conf edit the ADEVICE line to match your sound device
 names. Here is what mine looks like &nbsp;ADEVICE 7100 out 7100 in
 &nbsp;I named my playback device for the ic-7100 radio &nbsp;7100 out
-and the recording device 7100 in &nbsp;you will need two devices listed
-on theis line one is for playback device and one is for recording
-device. it is legal to name them the same thing.<br />
+and the recording device 7100 in. You will need two devices listed
+on theis line, one is for playback device and one is for recording
+device. It is acceptable to name them the same thing.<br />
+
 
 
 <br />
 
 
-Next find the line that says PTT COM1 RTS and remove the # change com1
-to the com port you use to assert PTT on your radio. if you go to
+
+Next find the line that says PTT COM1 RTS and remove the #. Change com1
+to the com port you use to assert PTT on your radio. If you go to
 device manager and click on ports you can find what comports you have.
 You may have more than one but you need to determine which one is your
 interface port for the radio. &nbsp; For the icom usb radios see the
@@ -255,20 +299,25 @@ CAT7200 section below. A signal link device uses VOX so you won't need
 to setup a PTT port for them.&nbsp; <br />
 
 
+
 That should finish up Direwolf setup. Be sure to save your file and try
-running direwolf. Ggreen lines are good and red lines are bad so if
-nothing is red you should be fine. &nbsp;if not the program should give
+running direwolf. Green lines are good and red lines are bad so if
+nothing is red you should be fine. Iif not the program should give
 you a good idea as to what is wrong.<br />
+
 
 
 <br />
 
 
+
 <span style="font-weight: bold;">Setting up APRSISCE</span><br />
-setup your You will need an aprs passcode. You can send an email to
+
+First you will need an aprs passcode. You can send an email to
 aprsisce-owner@yahoogroups.com&nbsp; and he will email you a password..
 If you already have a passcode but have forgotten what it is google
 aprs passcode to find a way to find yours. It is pretty simple. <br />
+
 
 
 install <a href="http://aprsisce.wikidot.com/">APRSSISCE</a> and
@@ -276,17 +325,19 @@ run it. &nbsp;You need to put in your call sign and passcode then save
 before it will run. Next drag the cursor on the map and zoom in to set
 your home location. Right click and select center on me. Next on the
 menu click on configure &gt;&gt; ports and click new port.<br />
-For type set to simply KISS and for name call it direwolf. Click create
-and from the next menu select TCP/IP set IP or DNS to 127.0.0.1
-&nbsp;and set the port to the port you setup for direwolf. In my case
+
+For type set to "simply KISS" and for name call it direwolf. Click create
+and from the next menu select TCP/IP. Set IP or DNS to 127.0.0.1
+and set the port to the port you setup for direwolf. In my case
 that is 8001. Click Accept and now ARPSISCE should be configured to use
 direwolf to communicate with your radio. <br />
+
 In a fixed location you can be setup as either an igate or a
 digipeater. Igates just monitor signals and forward to the internet
 aprs gateway. Digiopeaters can rebroadcast packets heard. If you decide
 to do this to avoid cluttering the frequency needlessly you can setup
 the number of hops to be digipeated. See this&nbsp;website for
-digipeating. http://aprsisce.wikidot.com/doc:digipeating . For an igate
+digipeating. <a href="http://aprsisce.wikidot.com/doc:digipeating">http://aprsisce.wikidot.com/doc:digipeating</a> . For an igate
 </big><span style="color: rgb(10, 10, 10); font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Oxygen,Ubuntu,Cantarell,&quot;Fira Sans&quot;,&quot;Droid Sans&quot;,&quot;Helvetica Neue&quot;,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(254, 254, 254); display: inline ! important; float: none;">You
 have some choices to make at this point. Go back to configure and
 select the direwolf port. Do you want your IGate to receive packets
@@ -301,27 +352,35 @@ importantly, if someone tries to text a mobile user that&rsquo;s within
 your range but not within originator&rsquo;s range, your IGate will
 relay the message to the user. For this scenario, select IS to RF, Xmit
 Enable, and Beacon, in addition to the options listed above.</span> Enjoy<br />
+
 <big>&nbsp;&nbsp;<br />
+
 <br />
+
 &nbsp;<br />
 
 
+
 <br />
+
 
 
 <span style="font-weight: bold;">setting up CAT7200 for those with&nbsp;newer icom radios<br />
 
 
+
 <br />
+
 
 
 </span>The newer icom radios use a usb port to provide cat control and
 sound in and out for computer control. The problem is programs like
-direwolf and sound modem do not use cat commands instead the just use a
+direwolf and sound modem do not use cat commands. Instead they just use a
 simple com port to asset PTT. Icom doesnt provide this but someone was
-nice enough to writr a program to do this. It is called CAT7200 and
+nice enough to write a program to do this. It is called CAT7200 and
 includes a driver for a virtual comport that you can use with Direwolf
 to assert PTT.<br />
+
 
 
 Download CAT 7200 here<span style="font-weight: bold;"></span></big><big> <a href="http://www.cantab.net/users/john.wiseman/Documents/CAT7200.html">CAT7200</a></big><big>&nbsp;Once
@@ -329,22 +388,24 @@ you have it extract to a folder maybe c:\CAT7200 &nbsp;There are to
 subfolders one for 32bit windows and one for 64bit windows. &nbsp;<br />
 
 
-For windows 10 open device manager. click on the computer icon at top
-of list. click action at top of window and click add legacy
-hardware.&nbsp; &nbsp;Click next pick install the hardware that i
-manually select from a list click next twice. from the list of devices
+
+For windows 10 open device manager. Click on the computer icon at top
+of list. Click action at top of window and click add legacy
+hardware.&nbsp; &nbsp;Click next, pick install the hardware that i
+manually select from a list, click next twice. From the list of devices
 find and select Ports (com &amp; lpt) click next. Select standard pot
 types and communications port and click have disk. &nbsp;navigate to
 the CAT7200 folder and to the proper sub folder either vcom32 for 32bit
 or vcom64 64bit and select the file and install. the port. you will
 need to reboot your computer to finish. &nbsp;If windows complains
-about it being an unsigned driver and refuses to install their is a
-work around for that. see <a href="https://www.maketecheasier.com/install-unsigned-drivers-windows10/">this page</a>.
-&nbsp;Once you have your computer re installed look in device manager
-again to see what port the virtual port got assigned to. If you want
-you can change this port number by right clicking on the port. clicking
-properties go to &nbsp;port settings then click advanced and pick a
+about it being an unsigned driver and refuses to install there is a
+work around for that. See <a href="https://www.maketecheasier.com/install-unsigned-drivers-windows10/">this page</a>.
+&nbsp;Once you have your computer reinstalled look in device manager
+again to see what port the virtual port got assigned to. If you want to,
+you can change this port number by right clicking on the port. Clicking
+properties, go to &nbsp;port settings then click advanced and pick a
 different port from the&nbsp;drop down list.<br />
+
 
 
 Run CAT7200 and select your new virtual com port for application port.
@@ -354,29 +415,34 @@ the port number entered enter the speed tou use then there is a civ
 address box below this needs to be set to rthe civ address of your
 radio. for an icom 7100 it is 88 for a 9100 it's 7C but look in your
 manual or radios menus and find what yours is set to.<br />
-
-
-click on open and click test. if it is setup right your radio should go
-into ptt mode. click test again to stiop transmitting. Now edit
+Click on open and click test. If it is setup right, your radio should go
+into ptt mode. Click test again to stiop transmitting. Now edit
 direwolf.conf and define the PTT port to your new virtual com port.
-&nbsp;to use APRSISCE you will first need to run cat 7200 and open the
-port. leave it running, run direwolf then run APRSISCE<br />
+&nbsp;To use APRSISCE you will first need to run cat 7200 and open the
+port. Leave it running, run direwolf then run APRSISCE<br />
+
 
 
 Enjoy APRS!<br />
-<br />
-
 
 <br />
 
 
+
 <br />
+
+
+
+<br />
+
 
 
 &nbsp;<br />
 
 
+
 <span></span><span class="aBn" data-term="goog_525571082" tabindex="0" style="border-bottom: 1px dashed rgb(204, 204, 204); position: relative; top: -2px; z-index: 0;"><span class="aQJ" style="position: relative; top: 2px; z-index: -1;"></span></span><span></span></big></div>
+
 
 
 <div style="text-align: left;">
@@ -384,17 +450,9 @@ Enjoy APRS!<br />
 </div>
 
 
-<br />
-
-
-
 
 <br />
 
-
-
-
-<br />
 
 
 
@@ -404,17 +462,9 @@ Enjoy APRS!<br />
 
 
 
-<br />
-
-
-
 
 <br />
 
-
-
-
-<br />
 
 
 
@@ -424,17 +474,9 @@ Enjoy APRS!<br />
 
 
 
-<br />
-
-
-
 
 <br />
 
-
-
-
-<br />
 
 
 
@@ -444,17 +486,57 @@ Enjoy APRS!<br />
 
 
 
-<br />
-
-
-
 
 <br />
 
 
 
 
+
 <br />
+
+
+
+
+
+<br />
+
+
+
+
+
+<br />
+
+
+
+
+
+<br />
+
+
+
+
+
+<br />
+
+
+
+
+
+<br />
+
+
+
+
+
+<br />
+
+
+
+
+
+<br />
+
 
 
 
@@ -464,7 +546,9 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
+
 
 
 
@@ -474,12 +558,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -489,7 +576,9 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
+
 
 
 
@@ -499,12 +588,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -514,7 +606,9 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
+
 
 
 
@@ -524,12 +618,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -539,7 +636,9 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
+
 
 
 
@@ -549,12 +648,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -564,7 +666,9 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
+
 
 
 
@@ -574,12 +678,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -589,7 +696,9 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
+
 
 
 
@@ -599,12 +708,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -614,7 +726,9 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
+
 
 
 
@@ -624,12 +738,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -639,12 +756,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -654,12 +774,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -669,7 +792,9 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
+
 
 
 
@@ -679,12 +804,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -694,7 +822,9 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
+
 
 
 
@@ -704,12 +834,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -719,7 +852,9 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
+
 
 
 
@@ -729,12 +864,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -744,7 +882,9 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
+
 
 
 
@@ -754,12 +894,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -769,7 +912,9 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
+
 
 
 
@@ -779,12 +924,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -794,7 +942,9 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
+
 
 
 
@@ -804,12 +954,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -819,7 +972,9 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
+
 
 
 
@@ -829,12 +984,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -844,12 +1002,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -859,12 +1020,15 @@ Enjoy APRS!<br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -872,6 +1036,7 @@ Enjoy APRS!<br />
 &copy; 2015 Nemoarc.org All rights reserved. Web design from a
 template by:<!-- PLEASE DON'T REMOVE THE LINK --> <a title="The All Art Directory" href="http://www.allartdirectory.com/">All Art Directory</a><!-- THANKS AGAIN! -->
 </div>
+
 
 
 
