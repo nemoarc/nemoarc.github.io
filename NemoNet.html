@@ -143,6 +143,12 @@
   if (document.getElementById("wd0fry").checked){ result += "WD0FRY"; ++cnt;
     if (document.getElementById("ncs44").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
 
+  if (document.getElementById("cname1").checked){ result += document.getElementById("name1").value; ++cnt; }
+  if (document.getElementById("cname2").checked){ result += document.getElementById("name2").value; ++cnt; }
+  if (document.getElementById("cname3").checked){ result += document.getElementById("name3").value; ++cnt; }
+  if (document.getElementById("cname4").checked){ result += document.getElementById("name4").value; ++cnt; }
+  if (document.getElementById("cname5").checked){ result += document.getElementById("name5").value; ++cnt; }
+
   result += "<br>"
   result += cnt + " Stations checked in" + "<br><br>"
   output.innerHTML = result;
@@ -231,22 +237,27 @@
   <tr>
   <td><input type="checkbox" id="kd0cud"/><label>KD0CUD - John Neeley</label><input type="checkbox" id="ncs16"/><label>NCS</label></td>
   <td><input type="checkbox" id="n0aya"/><label>N0AYA - Pam Barnett</label><input type="checkbox" id="ncs36"/><label>NCS</label></td>
+  <td><input type="checkbox" id="cname1"/><input type="text" id="name1" value="Call Sign - Name"></td>
   </tr>
   <tr>
   <td><input type="checkbox" id="kd0mke"/><label>KD0MKE - Carl Neighbors</label><input type="checkbox" id="ncs17"/><label>NCS</label></td>
   <td><input type="checkbox" id="n0bex"/><label>N0BEX - Becky Balfour</label><input type="checkbox" id="ncs37"/><label>NCS</label></td>
+  <td><input type="checkbox" id="cname2"/><input type="text" id="name2" value="Call Sign - Name"></td>
   </tr>
   <tr>
   <td><input type="checkbox" id="kd0pgm"/><label>KD0PGM - Don Bindner</label><input type="checkbox" id="ncs18"/><label>NCS</label></td>
   <td><input type="checkbox" id="n0ewg"/><label>N0EWG - Gwen Perrachione</label><input type="checkbox" id="ncs38"/> <label>NCS</label></td>
+  <td><input type="checkbox" id="cname3"/><input type="text" id="name3" value="Call Sign - Name"></td>
   </tr>
   <tr>
   <td><input type="checkbox" id="kd0sgm"/><label>KD0SGM - Kathy Krueger</label><input type="checkbox" id="ncs19"/><label>NCS</label></td>
   <td><input type="checkbox" id="n0rww"/><label>N0RWW - Paul Doi</label><input type="checkbox" id="ncs39"/><label>NCS</label></td>
+  <td><input type="checkbox" id="cname4"/><input type="text" id="name4" value="Call Sign - Name"></td>
   </tr>
   <tr>
   <td><input type="checkbox" id="kd0sgu"/><label>KD0SGU - Vance Myers</label><input type="checkbox" id="ncs20"/><label>NCS</label></td>
   <td><input type="checkbox" id="nr0q"/><label>NR0Q - Matt Chambers</label><input type="checkbox" id="ncs40"/><label>NCS</label></td>
+  <td><input type="checkbox" id="cname5"/><input type="text" id="name5" value="Call Sign - Name"></td>
   </tr>
 
   </table>
