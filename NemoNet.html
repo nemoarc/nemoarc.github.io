@@ -1,342 +1,418 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-  <title>Nemoarc Net List</title>
+<title>Nemoarc Net List</title>
+<script>
+  var nme1="AA0V - Kerry Haley";
+  var nme2="AB0CH - Craig Comstock";
+  var nme3="AB0DK - Dave Krueger";
+  var nme4="AC0KY - Merlin Shelton";
+  var nme5="AC0OK - Sam Cook";
+  var nme6="AD0B - David Balfour";
+  var nme7="AJ0HN - John Perrachione";
+  var nme8="KA0BAT - Jim Farmer";
+  var nme9="KA9PDK - Patrick McGillan";
+  var nme10="KB0NWT - Dave Newman";
+  var nme11="KB0QNH - Victor Farrell";
+  var nme12="KB0TJH - Heather Parajara";
+  var nme13="KB0VCN - Allen Caraway";
+  var nme14="KC0DD - James Davidson";
+  var nme15="KC0FGX - Ferrel McClanahan";
+  var nme16="KC0HIX - Kerry Porter";
+  var nme17="KC0HPD - Charles Porter";
+  var nme18="KD0CUD - John Neeley";
+  var nme19="KD0MKE - Carl Neighbors";
+  var nme20="KD0PGM - Don Bindner";
+  var nme21="KD0SGM - Kathy Krueger";
+  var nme22="KD0SGU - Vance Myers";
+  var nme23="KD0YTE - Alex Fleak";
+  var nme24="KE0FAH - Lon Frost";
+  var nme25="KE0FOM - Tom Lloyd";
+  var nme26="KE0HVU - Russell Shirk";
+  var nme27="KE0IDJ - Dan King";
+  var nme28="KE0MZF - Michael Borron";
+  var nme29="KE0OHK - Chris Long";
+  var nme30="KE0OHL - Louis Veatch";
+  var nme31="KE0PIA - Richard Nations";
+  var nme32="KE0PMP - Jordan Malugen";
+  var nme33="KE0PMQ - John Dungan";
+  var nme34="KE0PMR - Paul Stidham";
+  var nme35="KE0TVN - Robert Jackson";
+  var nme36="KE0VFX - Beverly Williams";
+  var nme37="KE0WHL - Dan Aaronson";
+  var nme38="N0AYA - Pam Barnett";
+  var nme39="N0BEX - Becky Balfour";
+  var nme40="N0EWG - Gwen Perrachione";
+  var nme41="N0RWW - Paul Doi";
+  var nme42="NR0Q - Matt Chambers";
+  var nme43="W0NR - David Massey-Brown";
+  var nme44="WA9UAA - Rob Meyer";
+  var nme45="WA9Z - Jim Warner";
+  var nme46="WB0ZHB - Chuck Porter";
+  var nme47="WD0FRY - Mel Wheeler";
+  var nme48="";
+  var nme49="";
+  var nme50="";
+  var nme51="";
+  var nme52="";
+  var nme53=""; 
+  var nme54="";
+  var nme55="";
+  var nme56="";
+  var nme57="";
+  var nme58="";
+  var nme59="";
+  var nme60="";
+</script>
 
+<SCRIPT LANGUAGE="JavaScript">
+function docWrite(variable) {
+    document.write(variable);
+}
 
-  <script language="JavaScript">
 function NetChk(){
-var cnt = 0;
-var output = document.getElementById("output");
-var result = ""
-var x = document.getElementById("danet").value;
-if (x == null || x == "") {
-alert("Net Name must be filled out");
-return false;
+
+  var cnt = 0;
+  var output = document.getElementById("output");
+  var result = ""
+
+  var x = document.getElementById("danet").value;
+  if (x == null || x == "") {
+    alert("Net Name must be filled out");
+    return false;
+  }
+  //var x = document.getElementById("dadate").value;
+  //if (x == null || x == "") {
+  //  alert("Net Date must be filled out");
+  //  return false;
+  //}
+  //alert (cnt);
+
+  result += document.getElementById("danet").value + "<br>"
+  result += document.getElementById("dadate").value + "<br>"
+
+  if ( document.getElementById("nam1").checked){ result += nme1; ++cnt;
+    if (document.getElementById("ncs1").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam2").checked){ result += nme2; ++cnt;
+    if (document.getElementById("ncs2").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam3").checked){ result += nme3"; ++cnt;
+    if (document.getElementById("ncs3").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam4").checked){ result += nme4"; ++cnt;
+    if (document.getElementById("ncs4").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam5").checked){ result += nme5"; ++cnt;
+    if (document.getElementById("ncs5").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam6").checked){ result += nme6"; ++cnt;
+    if (document.getElementById("ncs6").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam7").checked){ result += nme7"; ++cnt;
+    if (document.getElementById("ncs7").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam8").checked){ result += nme8"; ++cnt;
+    if (document.getElementById("ncs8").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam9").checked){ result += nme9"; ++cnt;
+    if (document.getElementById("ncs9").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam10").checked){ result += nme10"; ++cnt;
+    if (document.getElementById("ncs10").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam11").checked){ result += nme11"; ++cnt;
+    if (document.getElementById("ncs11").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam12").checked){ result += nme12"; ++cnt;
+    if (document.getElementById("ncs12").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam13").checked){ result += nme13"; ++cnt;
+    if (document.getElementById("ncs13").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam14").checked){ result += nme14"; ++cnt;
+    if (document.getElementById("ncs14").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam15").checked){ result += nme15"; ++cnt;
+    if (document.getElementById("ncs15").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam16").checked){ result += nme16"; ++cnt;
+    if (document.getElementById("ncs16").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam17").checked){ result += nme17"; ++cnt;
+    if (document.getElementById("ncs17").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam18").checked){ result += nme18"; ++cnt;
+    if (document.getElementById("ncs18").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam19").checked){ result += nme19"; ++cnt;
+    if (document.getElementById("ncs19").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam20").checked){ result += nme20"; ++cnt;
+    if (document.getElementById("ncs20").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam21").checked){ result += nme21"; ++cnt;
+    if (document.getElementById("ncs21").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam22").checked){ result += nme22"; ++cnt;
+    if (document.getElementById("ncs22").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam23").checked){ result += nme23"; ++cnt;
+    if (document.getElementById("ncs23").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam24").checked){ result += nme24"; ++cnt;
+    if (document.getElementById("ncs24").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam25").checked){ result += nme25"; ++cnt;
+    if (document.getElementById("ncs25").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam26").checked){ result += nme26"; ++cnt;
+    if (document.getElementById("ncs26").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam27").checked){ result += nme27"; ++cnt;
+    if (document.getElementById("ncs27").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam28").checked){ result += nme28"; ++cnt;
+    if (document.getElementById("ncs28").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam29").checked){ result += nme29"; ++cnt;
+    if (document.getElementById("ncs29").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam30").checked){ result += nme30"; ++cnt;
+    if (document.getElementById("ncs30").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam31").checked){ result += nme31"; ++cnt;
+    if (document.getElementById("ncs31").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam32").checked){ result += nme32"; ++cnt;
+    if (document.getElementById("ncs32").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam33").checked){ result += nme33"; ++cnt;
+    if (document.getElementById("ncs33").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam34").checked){ result += nme34"; ++cnt;
+    if (document.getElementById("ncs34").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam35").checked){ result += nme35"; ++cnt;
+    if (document.getElementById("ncs35").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam36").checked){ result += nme36"; ++cnt;
+    if (document.getElementById("ncs36").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam37").checked){ result += nme37"; ++cnt;
+    if (document.getElementById("ncs37").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam38").checked){ result += nme38"; ++cnt;
+    if (document.getElementById("ncs38").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam39").checked){ result += nme39"; ++cnt;
+    if (document.getElementById("ncs39").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam40").checked){ result += nme40"; ++cnt;
+    if (document.getElementById("ncs40").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam41").checked){ result += nme41"; ++cnt;
+    if (document.getElementById("ncs41").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam42").checked){ result += nme42"; ++cnt;
+    if (document.getElementById("ncs42").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam43").checked){ result += nme43"; ++cnt;
+    if (document.getElementById("ncs43").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam44").checked){ result += nme44"; ++cnt;
+    if (document.getElementById("ncs44").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam45").checked){ result += nme45"; ++cnt;
+    if (document.getElementById("ncs45").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam46").checked){ result += nme46"; ++cnt;
+    if (document.getElementById("ncs46").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam47").checked){ result += nme47"; ++cnt;
+    if (document.getElementById("ncs47").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam48").checked){ result += nme48"; ++cnt;
+    if (document.getElementById("ncs48").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam49").checked){ result += nme49"; ++cnt;
+    if (document.getElementById("ncs49").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam50").checked){ result += nme50"; ++cnt;
+    if (document.getElementById("ncs50").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam51").checked){ result += nme51"; ++cnt;
+    if (document.getElementById("ncs51").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam52").checked){ result += nme52"; ++cnt;
+    if (document.getElementById("ncs52").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam53").checked){ result += nme53"; ++cnt;
+    if (document.getElementById("ncs53").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam54").checked){ result += nme54"; ++cnt;
+    if (document.getElementById("ncs54").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam55").checked){ result += nme55"; ++cnt;
+    if (document.getElementById("ncs55").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam56").checked){ result += nme56"; ++cnt;
+    if (document.getElementById("ncs56").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam57").checked){ result += nme57"; ++cnt;
+    if (document.getElementById("ncs57").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam58").checked){ result += nme58"; ++cnt;
+    if (document.getElementById("ncs58").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam59").checked){ result += nme59"; ++cnt;
+    if (document.getElementById("ncs59").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if ( document.getElementById("nam60").checked){ result += nme60"; ++cnt;
+    if (document.getElementById("ncs60").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+
+  //if (document.getElementById("cname1").checked){ result += document.getElementById("name1").value; ++cnt; }
+  //if (document.getElementById("cname2").checked){ result += document.getElementById("name2").value; ++cnt; }
+  //if (document.getElementById("cname3").checked){ result += document.getElementById("name3").value; ++cnt; }
+  //if (document.getElementById("cname4").checked){ result += document.getElementById("name4").value; ++cnt; }
+  //if (document.getElementById("cname5").checked){ result += document.getElementById("name5").value; ++cnt; }
+  //alert (cnt);
+
+  result += "<br>"
+  result += cnt + " Stations checked in" + "<br><br>"
+  output.innerHTML = result;
 }
-var x = document.getElementById("dadate").value;
-if (x == null || x == "") {
-alert("Net Date must be filled out");
-return false;
-}
-result += document.getElementById("danet").value + "<br>"
-result += document.getElementById("dadate").value + "<br>"
-if ( document.getElementById("aa0v").checked){ result += "AA0V"; ++cnt;
-if (document.getElementById("ncs1").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if ( document.getElementById("ab0ch").checked){ result += "AB0CH"; ++cnt;
-if (document.getElementById("ncs2").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if ( document.getElementById("ab0dk").checked){ result += "AB0DK"; ++cnt;
-if (document.getElementById("ncs3").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if ( document.getElementById("ac0ky").checked){ result += "AC0KY"; ++cnt;
-if (document.getElementById("ncs4").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if ( document.getElementById("ac0ok").checked){ result += "AC0OK"; ++cnt;
-if (document.getElementById("ncs5").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if ( document.getElementById("ad0b").checked){ result += "AD0B"; ++cnt;
-if (document.getElementById("ncs6").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if ( document.getElementById("aj0hn").checked){ result += "AJ0HN"; ++cnt;
-if (document.getElementById("ncs7").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("ka0bat").checked){ result += "KA0BAT"; ++cnt;
-if (document.getElementById("ncs8").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("ka9pdk").checked){ result += "KA9PDK"; ++cnt;
-if (document.getElementById("ncs9").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if ( document.getElementById("kb0nwt").checked){ result += "KB0NWT"; ++cnt;
-if (document.getElementById("ncs10").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if ( document.getElementById("kb0qnh").checked){ result += "KB0QNH"; ++cnt;
-if (document.getElementById("ncs11").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if ( document.getElementById("kb0tjh").checked){ result += "KB0TJH"; ++cnt;
-if (document.getElementById("ncs12").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if ( document.getElementById("kb0vcn").checked){ result += "KD0VCN"; ++cnt;
-if (document.getElementById("ncs13").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if ( document.getElementById("kc0dd").checked){ result += "KC0DD"; ++cnt;
-if (document.getElementById("ncs14").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if ( document.getElementById("kc0fgx").checked){ result += "KCOFGX"; ++cnt;
-if (document.getElementById("ncs15").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if ( document.getElementById("kc0hpd").checked){ result += "KC0HPD"; ++cnt;
-if (document.getElementById("ncs16").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("kd0cud").checked){ result += "KD0CUD"; ++cnt;
-if (document.getElementById("ncs17").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("kd0mke").checked){ result += "KD0MKE"; ++cnt;
-if (document.getElementById("ncs18").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("kd0pgm").checked){ result += "KD0PGM"; ++cnt;
-if (document.getElementById("ncs19").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("kd0sgm").checked){ result += "KD0SGM"; ++cnt;
-if (document.getElementById("ncs20").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("kd0sgu").checked){ result += "KD0SGU"; ++cnt;
-if (document.getElementById("ncs21").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("kd0yte").checked){ result += "KD0YTE"; ++cnt;
-if (document.getElementById("ncs22").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("ke0fah").checked){ result += "KE0FAH"; ++cnt;
-if (document.getElementById("ncs23").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("ke0fom").checked){ result += "KE0FOM"; ++cnt;
-if (document.getElementById("ncs24").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("ke0hvu").checked){ result += "KE0HVU"; ++cnt;
-if (document.getElementById("ncs25").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("ke0idj").checked){ result += "KE0IDJ"; ++cnt;
-if (document.getElementById("ncs26").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("ke0mzf").checked){ result += "KE0MZF"; ++cnt;
-if (document.getElementById("ncs27").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("ke0ohk").checked){ result += "KE0OHK"; ++cnt;
-if (document.getElementById("ncs28").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("ke0ohl").checked){ result += "KE0OHL"; ++cnt;
-if (document.getElementById("ncs29").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("ke0pia").checked){ result += "KE0PIA"; ++cnt;
-if (document.getElementById("ncs30").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("ke0pmp").checked){ result += "KE0PMP"; ++cnt;
-if (document.getElementById("ncs31").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("ke0pmq").checked){ result += "KE0PMQ"; ++cnt;
-if (document.getElementById("ncs32").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("ke0pmr").checked){ result += "KE0PMR"; ++cnt;
-if (document.getElementById("ncs33").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("ke0tvn").checked){ result += "KE0TVN"; ++cnt;
-if (document.getElementById("ncs34").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("ke0vfx").checked){ result += "KE0VFX"; ++cnt;
-if (document.getElementById("ncs35").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("ke0whl").checked){ result += "KE0WHL"; ++cnt;
-if (document.getElementById("ncs36").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("n0aya").checked){ result += "N0AYA"; ++cnt;
-if (document.getElementById("ncs37").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("n0bex").checked){ result += "N0BEX"; ++cnt;
-if (document.getElementById("ncs38").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("n0ewg").checked){ result += "N0EWG"; ++cnt;
-if (document.getElementById("ncs39").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("n0rww").checked){ result += "N0RWW"; ++cnt;
-if (document.getElementById("ncs40").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("nr0q").checked){ result += "NR0Q"; ++cnt;
-if (document.getElementById("ncs41").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("w0nr").checked){ result += "W0NR"; ++cnt;
-if (document.getElementById("ncs42").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("wa9z").checked){ result += "WA9Z"; ++cnt;
-if (document.getElementById("ncs43").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("wb0zhb").checked){ result += "WB0ZHB"; ++cnt;
-if (document.getElementById("ncs44").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("wd0fry").checked){ result += "WD0FRY"; ++cnt;
-if (document.getElementById("ncs45").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-if (document.getElementById("cname1").checked){ result += document.getElementById("name1").value; ++cnt; }
-if (document.getElementById("cname2").checked){ result += document.getElementById("name2").value; ++cnt; }
-if (document.getElementById("cname3").checked){ result += document.getElementById("name3").value; ++cnt; }
-if (document.getElementById("cname4").checked){ result += document.getElementById("name4").value; ++cnt; }
-if (document.getElementById("cname5").checked){ result += document.getElementById("name5").value; ++cnt; }
-result += "<br>"
-result += cnt + " Stations checked in" + "<br><br>"
-output.innerHTML = result;
-}
-  </script>
+
+</script>
+
 </head>
-
 <body>
+ <h1>NEMOARC Net Call</h1>
 
-<h1>NEMOARC Net Call</h1>
-
-<div id="output">After clicking off the names of those who have checked
-in, click on the Make Report buuton. The report will show up right
-here. Left click and highlight all the lines of the report. Rt click
-and select copy. Open a new email and go to where you want the report
-in the body of your email. Rt click and select paste.
+ <div id="output">
+After clicking off the names of those who have checked in, click on the Make Report buuton. The report will show up right here. Left click and highlight all the lines of the report. Rt click and select copy. Open a new email and go to where you want the report in the body of your email. Rt click and select paste.
+<br>
 <br>
 
-<br>
+ </div>
 
-</div>
-
-<form>
+  <form>
   <fieldset>
-  <label>Net Name: </label> <input id="danet" type="text"> <br>
 
-  <label>Date: </label> <input id="dadate" type="text"> <br>
-  <br>
-
+  <label>Net Name: </label> <input type="text" id="danet"/>  <br>
+  <label>Date: </label> <input type="text" id="dadate"/>  <br><br>
+  <script type="text/javascript">
+    var today = new Date();
+    document.getElementById("dadate").value = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
+  </script>
   <table>
+  <tr>
+  <td><input type="checkbox" id="nam1"/><label><script>document.write(nme1)</script></label><input type="checkbox" id="ncs1"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam21"/><label><script>document.write(nme21)</script></label><input type="checkbox" id="ncs21"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam41"/><label><script>document.write(nme41)</script></label><input type="checkbox" id="ncs41"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam2"/><label><script>document.write(nme2)</script></label><input type="checkbox" id="ncs2"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam22"/><label><script>document.write(nme22)</script></label><input type="checkbox" id="ncs22"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam42"/><label><script>document.write(nme42)</script></label><input type="checkbox" id="ncs42"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam3"/><label><script>document.write(nme3)</script></label><input type="checkbox" id="ncs3"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam23"/><label><script>document.write(nme23)</script></label><input type="checkbox" id="ncs23"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam43"/><label><script>document.write(nme43)</script></label><input type="checkbox" id="ncs43"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam4"/><label><script>document.write(nme4)</script></label><input type="checkbox" id="ncs4"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam24"/><label><script>document.write(nme24)</script></label><input type="checkbox" id="ncs24"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam44"/><label><script>document.write(nme44)</script></label><input type="checkbox" id="ncs44"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam5"/><label><script>document.write(nme5)</script></label><input type="checkbox" id="ncs5"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam25"/><label><script>document.write(nme25)</script></label><input type="checkbox" id="ncs25"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam45"/><label><script>document.write(nme45)</script></label><input type="checkbox" id="ncs45"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam6"/><label><script>document.write(nme6)</script></label><input type="checkbox" id="ncs6"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam26"/><label><script>document.write(nme26)</script></label><input type="checkbox" id="ncs26"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam46"/><label><script>document.write(nme46)</script></label><input type="checkbox" id="ncs46"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam7"/><label><script>document.write(nme7)</script></label><input type="checkbox" id="ncs7"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam27"/><label><script>document.write(nme27)</script></label><input type="checkbox" id="ncs27"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam47"/><label><script>document.write(nme47)</script></label><input type="checkbox" id="ncs47"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam8"/><label><script>document.write(nme8)</script></label><input type="checkbox" id="ncs8"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam28"/><label><script>document.write(nme28)</script></label><input type="checkbox" id="ncs28"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam48"/><label><script>document.write(nme48)</script></label><input type="checkbox" id="ncs48"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam9"/><label><script>document.write(nme9)</script></label><input type="checkbox" id="ncs19"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam29"/><label><script>document.write(nme29)</script></label><input type="checkbox" id="ncs29"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam49"/><label><script>document.write(nme49)</script></label><input type="checkbox" id="ncs49"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam10"/><label><script>document.write(nme10)</script></label><input type="checkbox" id="ncs10"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam30"/><label><script>document.write(nme30)</script></label><input type="checkbox" id="ncs30"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam50"/><label><script>document.write(nme50)</script></label><input type="checkbox" id="ncs50"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam11"/><label><script>document.write(nme11)</script></label><input type="checkbox" id="ncs11"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam31"/><label><script>document.write(nme31)</script></label><input type="checkbox" id="ncs31"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam51"/><label><script>document.write(nme51)</script></label><input type="checkbox" id="ncs51"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam12"/><label><script>document.write(nme12)</script></label><input type="checkbox" id="ncs12"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam32"/><label><script>document.write(nme32)</script></label><input type="checkbox" id="ncs32"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam52"/><label><script>document.write(nme52)</script></label><input type="checkbox" id="ncs52"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam13"/><label><script>document.write(nme13)</script></label><input type="checkbox" id="ncs13"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam33"/><label><script>document.write(nme33)</script></label><input type="checkbox" id="ncs33"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam53"/><label><script>document.write(nme53)</script></label><input type="checkbox" id="ncs53"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam14"/><label><script>document.write(nme14)</script></label><input type="checkbox" id="ncs14"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam34"/><label><script>document.write(nme34)</script></label><input type="checkbox" id="ncs34"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam54"/><label><script>document.write(nme54)</script></label><input type="checkbox" id="ncs54"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam15"/><label><script>document.write(nme15)</script></label><input type="checkbox" id="ncs15"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam35"/><label><script>document.write(nme35)</script></label><input type="checkbox" id="ncs35"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam55"/><label><script>document.write(nme55)</script></label><input type="checkbox" id="ncs55"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam16"/><label><script>document.write(nme16)</script></label><input type="checkbox" id="ncs16"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam36"/><label><script>document.write(nme36)</script></label><input type="checkbox" id="ncs36"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam56"/><label><script>document.write(nme56)</script></label><input type="checkbox" id="ncs56"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam17"/><label><script>document.write(nme17)</script></label><input type="checkbox" id="ncs17"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam37"/><label><script>document.write(nme37)</script></label><input type="checkbox" id="ncs37"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam57"/><label><script>document.write(nme57)</script></label><input type="checkbox" id="ncs57"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam18"/><label><script>document.write(nme18)</script></label><input type="checkbox" id="ncs18"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam38"/><label><script>document.write(nme38)</script></label><input type="checkbox" id="ncs38"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam58"/><label><script>document.write(nme58)</script></label><input type="checkbox" id="ncs58"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam19"/><label><script>document.write(nme19)</script></label><input type="checkbox" id="ncs19"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam39"/><label><script>document.write(nme39)</script></label><input type="checkbox" id="ncs39"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam59"/><label><script>document.write(nme59)</script></label><input type="checkbox" id="ncs59"/><label>NCS</label></td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" id="nam20"/><label><script>document.write(nme20)</script></label><input type="checkbox" id="ncs20"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam40"/><label><script>document.write(nme40)</script></label><input type="checkbox" id="ncs40"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam60"/><label><script>document.write(nme60)</script></label><input type="checkbox" id="ncs60"/><label>NCS</label></td>
+  </tr>
 
-    <tbody>
-      <tr>
-
-        <td><input id="aa0v" type="checkbox"><label>AA0V - Kerry Haley</label><input id="ncs1" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="kd0sgu" type="checkbox"><label>KD0SGU - Vance Myers</label><input id="ncs21" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="nr0q" type="checkbox"><label>NR0Q - Matt Chambers</label><input id="ncs41" type="checkbox"><label>NCS</label></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="ab0ch" type="checkbox"><label>AB0CH - Craig Comstock</label><input id="ncs2" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="kd0yte" type="checkbox"><label>KD0YTE - Alex Fleak</label><input id="ncs22" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="w0nr" type="checkbox"><label>W0NR - David Massey-Brown</label><input id="ncs42" type="checkbox"><label>NCS</label></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="ab0dk" type="checkbox"><label>AB0DK - Dave Krueger</label><input id="ncs3" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="ke0fah" type="checkbox"><label>KE0FAH - Lon Frost</label><input id="ncs23" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="wa9z" type="checkbox"><label>WA9Z - Jim Warner</label><input id="ncs43" type="checkbox"><label>NCS</label></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="ac0ky" type="checkbox"><label>AC0KY - Merlin Shelton</label><input id="ncs4" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="ke0fom" type="checkbox"><label>KE0FOM - Tom Lloyd</label><input id="ncs24" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="wb0zhb" type="checkbox"><label>WB0ZHB - Chuck Porter</label><input id="ncs44" type="checkbox"> <label>NCS</label></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="ac0ok" type="checkbox"><label>AC0OK - Sam Cook</label><input id="ncs5" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="ke0hvu" type="checkbox"><label>KE0HVU - Russell Shirk</label><input id="ncs25" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="wd0fry" type="checkbox"><label>WD0FRY - Mel Wheeler</label><input id="ncs45" type="checkbox"><label>NCS</label></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="ad0b" type="checkbox"><label>AD0B - David Balfour</label><input id="ncs6" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="ke0idj" type="checkbox"><label>KE0IDJ - Dan King</label><input id="ncs26" type="checkbox"><label>NCS</label></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="aj0hn" type="checkbox"><label>AJ0HN - John Perrachione</label><input id="ncs7" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="ke0mzf" type="checkbox"><label>KE0MZF - Michael Borron</label><input id="ncs27" type="checkbox"><label>NCS</label></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="ka0bat" type="checkbox"><label>KA0BAT - Jim Farmer</label><input id="ncs8" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="ke0ohk" type="checkbox"><label>KE0OHK - Chris Long</label><input id="ncs28" type="checkbox"><label>NCS</label></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="ka9pdk" type="checkbox"><label>KA9PDK - Patrick McGillan</label><input id="ncs9" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="ke0ohl" type="checkbox"><label>KE0OHL - Louis Veatch</label><input id="ncs29" type="checkbox"><label>NCS</label></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="kb0nwt" type="checkbox"><label>KB0NWT - Dave Newman</label><input id="ncs10" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="ke0pia" type="checkbox"><label>KE0PIA - Richard Nations</label><input id="ncs30" type="checkbox"><label>NCS</label></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="kb0qnh" type="checkbox"><label>KB0QNH - Victor Farrell</label><input id="ncs11" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="ke0pmp" type="checkbox"><label>KE0PMP - Jordan Malugen</label><input id="ncs31" type="checkbox"><label>NCS</label></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="kb0tjh" type="checkbox"><label>KB0TJH - Heather Parajara</label><input id="ncs12" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="ke0pmq" type="checkbox"><label>KE0PMQ - John Dungan</label><input id="ncs32" type="checkbox"><label>NCS</label></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="kb0vcn" type="checkbox"><label>KB0VCN - Allen Caraway</label><input id="ncs13" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="ke0pmr" type="checkbox"><label>KE0PMR - Paul Stidham</label><input id="ncs33" type="checkbox"><label>NCS</label></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="kc0dd" type="checkbox"><label>KC0DD - James Davidson</label><input id="ncs14" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="ke0tvn" type="checkbox"><label>KE0TVN - Robert Jackson</label><input id="ncs34" type="checkbox"><label>NCS</label></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="kc0fgx" type="checkbox"><label>KC0FGX - Ferrel McClanahan</label><input id="ncs15" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="ke0vfx" type="checkbox"><label>KE0VFX - Beverly Williams</label><input id="ncs35" type="checkbox"><label>NCS</label></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="kc0hpd" type="checkbox"><label>KC0HPD - Charles Porter</label><input id="ncs16" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="ke0whl" type="checkbox"><label>KE0WHL - Dan Aaronson</label><input id="ncs36" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="cname1" type="checkbox"><input id="name1" value="Call Sign - Name" type="text"></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="kd0cud" type="checkbox"><label>KD0CUD - John Neeley</label><input id="ncs17" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="n0aya" type="checkbox"><label>N0AYA - Pam Barnett</label><input id="ncs37" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="cname2" type="checkbox"><input id="name2" value="Call Sign - Name" type="text"></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="kd0mke" type="checkbox"><label>KD0MKE - Carl Neighbors</label><input id="ncs18" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="n0bex" type="checkbox"><label>N0BEX - Becky Balfour</label><input id="ncs38" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="cname3" type="checkbox"><input id="name3" value="Call Sign - Name" type="text"></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="kd0pgm" type="checkbox"><label>KD0PGM - Don Bindner</label><input id="ncs19" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="n0ewg" type="checkbox"><label>N0EWG - Gwen Perrachione</label><input id="ncs39" type="checkbox"> <label>NCS</label></td>
-
-        <td><input id="cname4" type="checkbox"><input id="name4" value="Call Sign - Name" type="text"></td>
-
-      </tr>
-
-      <tr>
-
-        <td><input id="kd0sgm" type="checkbox"><label>KD0SGM - Kathy Krueger</label><input id="ncs20" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="n0rww" type="checkbox"><label>N0RWW - Paul Doi</label><input id="ncs40" type="checkbox"><label>NCS</label></td>
-
-        <td><input id="cname5" type="checkbox"><input id="name5" value="Call Sign - Name" type="text"></td>
-
-      </tr>
-
-    </tbody>
   </table>
 
-  <button type="button" onclick="NetChk()">Make Report</button>
+  <button type="button" onclick = "NetChk()">Make Report</button>
+
   </fieldset>
-
-</form>
-
+ </form>
 <br>
-
 </body>
 </html>
