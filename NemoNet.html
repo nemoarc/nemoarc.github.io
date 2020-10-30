@@ -250,14 +250,18 @@ function NetChk(){
   if ( document.getElementById("nam57").checked){ result += nme57; ++cnt;
     if (document.getElementById("ncs57").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
 
-  if ( document.getElementById("nam58").checked){ result += nme58; ++cnt;
-    if (document.getElementById("ncs58").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+//  if ( document.getElementById("nam58").checked){ result += nme58; ++cnt;
+//    if (document.getElementById("ncs58").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
 
-  if ( document.getElementById("nam59").checked){ result += nme59; ++cnt;
-    if (document.getElementById("ncs59").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+//  if ( document.getElementById("nam59").checked){ result += nme59; ++cnt;
+//    if (document.getElementById("ncs59").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
 
-  if ( document.getElementById("nam60").checked){ result += nme60; ++cnt;
-    if (document.getElementById("ncs60").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+//  if ( document.getElementById("nam60").checked){ result += nme60; ++cnt;
+//    if (document.getElementById("ncs60").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
+
+  if (document.getElementById("cname1").checked){ result += document.getElementById("name1").value; ++cnt; }
+  if (document.getElementById("cname2").checked){ result += document.getElementById("name2").value; ++cnt; }
+  if (document.getElementById("cname3").checked){ result += document.getElementById("name3").value; ++cnt; }
 
   result += "<br>"
   result += cnt + " Stations checked in" + "<br><br>"
@@ -328,7 +332,7 @@ After clicking off the names of those who have checked in, click on the Make Rep
   <td><input type="checkbox" id="nam48"/><label><script>document.write(nme48)</script></label><input type="checkbox" id="ncs48"/><label>NCS</label></td>
   </tr>
   <tr>
-  <td><input type="checkbox" id="nam9"/><label><script>document.write(nme9)</script></label><input type="checkbox" id="ncs19"/><label>NCS</label></td>
+  <td><input type="checkbox" id="nam9"/><label><script>document.write(nme9)</script></label><input type="checkbox" id="ncs9"/><label>NCS</label></td>
   <td><input type="checkbox" id="nam29"/><label><script>document.write(nme29)</script></label><input type="checkbox" id="ncs29"/><label>NCS</label></td>
   <td><input type="checkbox" id="nam49"/><label><script>document.write(nme49)</script></label><input type="checkbox" id="ncs49"/><label>NCS</label></td>
   </tr>
@@ -375,17 +379,17 @@ After clicking off the names of those who have checked in, click on the Make Rep
   <tr>
   <td><input type="checkbox" id="nam18"/><label><script>document.write(nme18)</script></label><input type="checkbox" id="ncs18"/><label>NCS</label></td>
   <td><input type="checkbox" id="nam38"/><label><script>document.write(nme38)</script></label><input type="checkbox" id="ncs38"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam58"/><label><script>document.write(nme58)</script></label><input type="checkbox" id="ncs58"/><label>NCS</label></td>
+  <td><input type="checkbox" id="cname1"/><input type="text" id="name1" value="Call Sign - Name"></td>
   </tr>
   <tr>
   <td><input type="checkbox" id="nam19"/><label><script>document.write(nme19)</script></label><input type="checkbox" id="ncs19"/><label>NCS</label></td>
   <td><input type="checkbox" id="nam39"/><label><script>document.write(nme39)</script></label><input type="checkbox" id="ncs39"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam59"/><label><script>document.write(nme59)</script></label><input type="checkbox" id="ncs59"/><label>NCS</label></td>
+  <td><input type="checkbox" id="cname2"/><input type="text" id="name2" value="Call Sign - Name"></td>
   </tr>
   <tr>
   <td><input type="checkbox" id="nam20"/><label><script>document.write(nme20)</script></label><input type="checkbox" id="ncs20"/><label>NCS</label></td>
   <td><input type="checkbox" id="nam40"/><label><script>document.write(nme40)</script></label><input type="checkbox" id="ncs40"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam60"/><label><script>document.write(nme60)</script></label><input type="checkbox" id="ncs60"/><label>NCS</label></td>
+  <td><input type="checkbox" id="cname3"/><input type="text" id="name3" value="Call Sign - Name"></td>
   </tr>
 
   </table>
