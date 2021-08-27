@@ -10,55 +10,55 @@
   var nme5="AC0OK - Sam Cook";
   var nme6="AD0B - David Balfour";
   var nme7="AJ0HN - John Perrachione";
-  var nme8="K0WXC - Chris Long";
-  var nme9="KA0BAT - Jim Farmer";
-  var nme10="KA9PDK - Patrick McGillan";
-  var nme11="KB0NWT - Dave Newman";
-  var nme12="KB0QNH - Victor Farrell";
-  var nme13="KB0TJH - Heather Parajara";
-  var nme14="KB0VCN - Allen Caraway";
-  var nme15="KC0DD - James Davidson";
-  var nme16="KC0BSH - Kristina Smith";
-  var nme17="KC0FGX - Ferrel McClanahan";
-  var nme18="KC0HIX - Cary Porter";
-  var nme19="KC0HPD - Charles Porter";
-  var nme20="KD0CUD - John Neeley";
-  var nme21="KD0MKE - Carl Neighbors";
-  var nme22="KD0PGM - Don Bindner";
-  var nme23="KD0PJV - Clifford Bailey";
-  var nme24="KD0SGM - Kathy Krueger";
-  var nme25="KD0SGU - Vance Myers";
-  var nme26="KD0YTE - Alex Fleak";
-  var nme27="KE0FAH - Lon Frost";
-  var nme28="KE0FWB - Chris McNabb";
-  var nme29="KE0FOM - Tom Lloyd";
-  var nme30="KE0HVU - Russell Shirk";
-  var nme31="KE0IDJ - Dan King";
-  var nme32="KE0MZF - Michael Borron";
-  var nme33="KE0OHL - Louis Veatch";
-  var nme34="KE0PIA - Richard Nations";
-  var nme35="KE0PMP - Jordan Malugen";
-  var nme36="KE0PMQ - John Dungan";
-  var nme37="KE0PMR - Paul Stidham";
-  var nme38="KE0QZW - Chad Varner";
-  var nme39="KE0TVN - Robert Jackson";
-  var nme40="KE0VFX - Beverly Williams";
-  var nme41="KE0WHL - Dan Aaronson";
-  var nme42="KF0FPO - David Cowgill";
-  var nme43="N0AYA - Pam Barnett";
-  var nme44="N0BEX - Becky Balfour";
-  var nme45="N0EWG - Gwen Perrachione";
-  var nme46="N0LSE - Laurel Varner";
-  var nme47="N0RWW - Paul Doi";
-  var nme48="NR0Q - Matt Chambers";
-  var nme49="NT0C - Ron Harrison";
-  var nme50="W0NR - David Massey-Brown";
-  var nme51="WA9UAA - Rob Meyer";
-  var nme52="WA9Z - Jim Warner";
-  var nme53="WB0ZHB - Chuck Porter";
-  var nme54="WD0FRY - Mel Wheeler";
-  var nme55=""; 
-  var nme56="";
+  var nme8="K0OTP - Donald Morrison";
+  var nme9="K0WXC - Chris Long";
+  var nme10="KA0BAT - Jim Farmer";
+  var nme11="KA9PDK - Patrick McGillan";
+  var nme12="KB0NWT - Dave Newman";
+  var nme13="KB0QNH - Victor Farrell";
+  var nme14="KB0TJH - Heather Parajara";
+  var nme15="KB0VCN - Allen Caraway";
+  var nme16="KC0DD - James Davidson";
+  var nme17="KC0BSH - Kristina Smith";
+  var nme18="KC0FGX - Ferrel McClanahan";
+  var nme19="KC0HIX - Cary Porter";
+  var nme20="KC0HPD - Charles Porter";
+  var nme21="KD0CUD - John Neeley";
+  var nme22="KD0MKE - Carl Neighbors";
+  var nme23="KD0PGM - Don Bindner";
+  var nme24="KD0PJV - Clifford Bailey";
+  var nme25="KD0SGM - Kathy Krueger";
+  var nme26="KD0SGU - Vance Myers";
+  var nme27="KD0YTE - Alex Fleak";
+  var nme28="KE0FAH - Lon Frost";
+  var nme29="KE0FWB - Chris McNabb";
+  var nme30="KE0FOM - Tom Lloyd";
+  var nme31="KE0HVU - Russell Shirk";
+  var nme32="KE0IDJ - Dan King";
+  var nme33="KE0MZF - Michael Borron";
+  var nme34="KE0OHL - Louis Veatch";
+  var nme35="KE0PIA - Richard Nations";
+  var nme36="KE0PMP - Jordan Malugen";
+  var nme37="KE0PMQ - John Dungan";
+  var nme38="KE0PMR - Paul Stidham";
+  var nme39="KE0QZW - Chad Varner";
+  var nme40="KE0TVN - Robert Jackson";
+  var nme41="KE0VFX - Beverly Williams";
+  var nme42="KE0WHL - Dan Aaronson";
+  var nme43="KF0FPO - David Cowgill";
+  var nme44="N0AYA - Pam Barnett";
+  var nme45="N0BEX - Becky Balfour";
+  var nme46="N0EWG - Gwen Perrachione";
+  var nme47="N0LSE - Laurel Varner";
+  var nme48="N0RWW - Paul Doi";
+  var nme49="N0SKF - Dusty Proctor";
+  var nme50="NR0Q - Matt Chambers";
+  var nme51="NT0C - Ron Harrison";
+  var nme52="W0NR - David Massey-Brown";
+  var nme53="WA9UAA - Rob Meyer";
+  var nme54="WA9Z - Jim Warner";
+  var nme55="WB0ZHB - Chuck Porter";
+  var nme56="WD0FRY - Mel Wheeler";
   var nme57="";
   var nme58="";
   var nme59="";
@@ -266,7 +266,7 @@ function NetChk(){
   if (document.getElementById("cname2").checked){ result += document.getElementById("name2").value; ++cnt; }
   if (document.getElementById("cname3").checked){ result += document.getElementById("name3").value; ++cnt; }
 
-  result += "<br>"
+  result += "<br>Counting Net Control, "
   result += cnt + " Stations checked in" + "<br><br>"
 
   output.innerHTML = result;
@@ -367,12 +367,12 @@ After clicking off the names of those who have checked in, click on the Make Rep
   <tr>
   <td><input type="checkbox" id="nam15"/><label><script>document.write(nme15)</script></label><input type="checkbox" id="ncs15"/><label>NCS</label></td>
   <td><input type="checkbox" id="nam35"/><label><script>document.write(nme35)</script></label><input type="checkbox" id="ncs35"/><label>NCS</label></td>
-  <td><label id="nam55"><label id="ncs55"></td>
+  <td><input type="checkbox" id="nam55"/><label><script>document.write(nme55)</script></label><input type="checkbox" id="ncs55"/><label>NCS</label></td>
   </tr>
   <tr>
   <td><input type="checkbox" id="nam16"/><label><script>document.write(nme16)</script></label><input type="checkbox" id="ncs16"/><label>NCS</label></td>
   <td><input type="checkbox" id="nam36"/><label><script>document.write(nme36)</script></label><input type="checkbox" id="ncs36"/><label>NCS</label></td>
-  <td><label id="nam56"><label id="ncs56"></td>
+  <td><input type="checkbox" id="nam56"/><label><script>document.write(nme56)</script></label><input type="checkbox" id="ncs56"/><label>NCS</label></td>
   </tr>
   <tr>
   <td><input type="checkbox" id="nam17"/><label><script>document.write(nme17)</script></label><input type="checkbox" id="ncs17"/><label>NCS</label></td>
