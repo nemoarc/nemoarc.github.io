@@ -5,6 +5,8 @@
 
 
 
+
+  
   
   
   
@@ -13,6 +15,8 @@
 
 
 
+
+  
   
   
   
@@ -20,9 +24,12 @@
 
 
 
+
   
 
 
+  
+  
   
   
   
@@ -34,6 +41,8 @@
 
 
 
+
+  
   
   
   
@@ -42,6 +51,8 @@
 
 
 
+
+  
   
   
   
@@ -50,6 +61,8 @@
 
 
 
+
+  
   
   
   
@@ -62,29 +75,33 @@
 
 
 
+
 <div class="header1">
 <div class="nav-bg-outer">
 <div class="nav-bg">
 <div class="nav-bg-inner" style="margin-left: 84px;"><a class="nav" href="/index.html">Home</a> | <a class="nav" href="/index.html"><strong></strong></a><strong><a href="photos.html" class="nav">Photos</a> | <a href="licensing.html" class="nav">Get Licensed</a>
 | <a href="ares/index.html" class="nav">ARES</a>|
-<a href="fieldday.html" class="nav">Field Day</a>
-|<a href="members.html">Members</a>| <a href="projects.html" class="nav">Member
+<a href="fieldday.html" class="nav">Field Day</a>&nbsp;| <a href="projects.html" class="nav">Member
 Projects</a> |&nbsp;<span style="color: rgb(0, 102, 153);"></span></strong></div>
 
 
 
 
-</div>
-
-
-
 
 </div>
 
 
 
 
+
 </div>
+
+
+
+
+
+</div>
+
 
 
 
@@ -96,13 +113,16 @@ Missouri Amateur Radio Club</span></h1>
 
 
 
+
 <div style="margin-top: -5px;">Serving Adair County and
 the Surrounding Area</div>
 
 
 
 
+
 </div>
+
 
 
 
@@ -114,7 +134,9 @@ the Surrounding Area</div>
 
 
 
+
 <br />
+
 
 
 
@@ -128,63 +150,101 @@ than it only allows computers in your house to access the shared drive.
 Size of the drive is limited to amount of memory available, so if you
 want to have gobs of memory, you will need to use an external USB drive
 plugged into your RPi.<br />
+
 <br />
+
 First you will have to load samba, so<br />
+
 $sudo apt install samba<br />
+
 <br />
+
 Before editing your smb.conf file, the way I did<br />
+
 $cd /etc/samba<br />
+
 $sudo mv smb.conf smb.conf.org<br />
+
 to save the orignal<br />
+
 <br />
+
 $sudo touch smb.conf<br />
+
 <br />
+
 now edit your smb.conf file to look like this<br />
+
 ----------------------------------------------------------<br />
+
 [global]<br />
+
 &nbsp;&nbsp;&nbsp; workgroup = WORKGROUP<br />
+
 &nbsp;&nbsp;&nbsp; hosts allow = 192.168.2.<br />
+
 &nbsp;&nbsp;&nbsp; hosts deny = ALL<br />
+
 &nbsp;&nbsp;&nbsp; log file = /var/log/samba/log.%m<br />
+
 &nbsp;&nbsp;&nbsp; logging = file<br />
+
 &nbsp;&nbsp;&nbsp; map to guest = bad user<br />
+
 <br />
+
 [Shares]<br />
+
 &nbsp;&nbsp;&nbsp; path = /home/Shared<br />
+
 &nbsp;&nbsp;&nbsp; guest ok = yes<br />
+
 &nbsp;&nbsp;&nbsp; read only = no<br />
+
 &nbsp;&nbsp;&nbsp; create mask = 0777<br />
+
 &nbsp;&nbsp;&nbsp; directory mask = 0777<br />
+
 &nbsp;&nbsp;&nbsp; force user = nobody<br />
+
 <br />
+
 ----------------------------------------------------------<br />
+
 <br />
+
 Be sure and create the mount point for your share, with<br />
+
 $sudo mkdir /home/Shared<br />
+
 <br />
+
 After creating your directory, give everyone rights<br />
+
 $sudo chmod 777 /home/Shared<br />
+
 $sudo chown -R nobody.nogroup /home/Shared<br />
+
 <br />
+
 To test config file, use;<br />
+
 $sudo testparm<br />
+
 <br />
+
 After any changes to the smb.conf file, use this to restart<br />
+
 $sudo service smbd restart<br />
+
 <br />
+
 At this point, you should find the computer and the share under network on your computer.<br />
+
 You may also wish to rt click on Shared and map a drive letter.</big><br />
-<br />
-
-
-
 
 <br />
 
-
-
-
-<br />
 
 
 
@@ -194,17 +254,9 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
-<br />
-
-
-
 
 <br />
 
-
-
-
-<br />
 
 
 
@@ -214,17 +266,9 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
-<br />
-
-
-
 
 <br />
 
-
-
-
-<br />
 
 
 
@@ -234,17 +278,57 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
-<br />
-
-
-
 
 <br />
 
 
 
 
+
 <br />
+
+
+
+
+
+<br />
+
+
+
+
+
+<br />
+
+
+
+
+
+<br />
+
+
+
+
+
+<br />
+
+
+
+
+
+<br />
+
+
+
+
+
+<br />
+
+
+
+
+
+<br />
+
 
 
 
@@ -254,7 +338,9 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
+
 
 
 
@@ -264,12 +350,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -279,7 +368,9 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
+
 
 
 
@@ -289,12 +380,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -304,7 +398,9 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
+
 
 
 
@@ -314,12 +410,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -329,7 +428,9 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
+
 
 
 
@@ -339,12 +440,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -354,7 +458,9 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
+
 
 
 
@@ -364,12 +470,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -379,7 +488,9 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
+
 
 
 
@@ -389,12 +500,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -404,7 +518,9 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
+
 
 
 
@@ -414,12 +530,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -429,12 +548,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -444,12 +566,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -459,7 +584,9 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
+
 
 
 
@@ -469,12 +596,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -484,7 +614,9 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
+
 
 
 
@@ -494,12 +626,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -509,7 +644,9 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
+
 
 
 
@@ -519,12 +656,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -534,7 +674,9 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
+
 
 
 
@@ -544,12 +686,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -559,7 +704,9 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
+
 
 
 
@@ -569,12 +716,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -584,7 +734,9 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
+
 
 
 
@@ -594,12 +746,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -609,7 +764,9 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
+
 
 
 
@@ -619,12 +776,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -634,12 +794,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -649,12 +812,15 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 
 
 
+
 <br />
 
 
 
 
+
 <br />
+
 
 
 
@@ -662,6 +828,7 @@ You may also wish to rt click on Shared and map a drive letter.</big><br />
 &copy; 2015 Nemoarc.org All rights reserved. Web design from a
 template by:<!-- PLEASE DON'T REMOVE THE LINK --> <a title="The All Art Directory" href="http://www.allartdirectory.com/">All Art Directory</a><!-- THANKS AGAIN! -->
 </div>
+
 
 
 
