@@ -1,407 +1,220 @@
-
+<!doctype html>
+<!-- 2025-07-12 - Don Bindner -->
 <html>
-<head>
-<title>Nemoarc Net List</title>
-<!-- 11/Mar/2023 20:15 -->
-<script>
-  var nme1="AA0V - Kerry Haley";
-  var nme2="AB0CH - Craig Comstock";
-  var nme3="AB0DK - Dave Krueger";
-  var nme4="AC0KY - Merlin Shelton";
-  var nme5="AC0OK - Sam Cook";
-  var nme6="AD0B - David Balfour";
-  var nme7="AE0TF - Don Bindner";
-  var nme8="AJ0HN - John Perrachione";
-  var nme9="K0HY - Chad Varner";
-  var nme10="K0ME - Lary Ciesemier";
-  var nme11="K0OTP - Donald Morrison";
-  var nme12="K0PHP - Chris Swisher";
-  var nme13="K0WXC - Chris Long";
-  var nme14="KA0BAT - Jim Farmer";
-  var nme15="KB0NWT - Dave Newman";
-  var nme16="KB0QNH - Victor Farrell";
-  var nme17="KB0TJH - Heather Parajara";
-  var nme18="KB0VCN - Allen Caraway";
-  var nme19="KC0DD - James Davidson";
-  var nme20="KC0BSH - Kristina Smith";
-  var nme21="KC0FGX - Ferrell McClanahan";
-  var nme22="KC0HIX - Cary Porter";
-  var nme23="KC0IJN - Dean Lund";
-  var nme24="KC0HPD - Charles Porter";
-  var nme25="KD0CUD - John Neeley";
-  var nme26="KD0MKE - Carl Neighbors";
-  var nme27="KD0PJV - Clifford Bailey";
-  var nme28="KD0SGM - Kathy Krueger";
-  var nme29="KD0YTE - Alex Fleak";
-  var nme30="KE0FWB - Chris McNabb";
-  var nme31="KE0FOM - Tom Lloyd";
-  var nme32="KE0HVU - Russell Shirk";
-  var nme33="KE0IDJ - Dan King";
-  var nme34="KE0MZF - Michael Borron";
-  var nme35="KE0OHL - Louis Veatch";
-  var nme36="KE0PIA - Richard Nations";
-  var nme37="KE0PMP - Jordan Malugen";
-  var nme38="KE0PMQ - John Dungan";
-  var nme39="KE0PMR - Paul Stidham";
-  var nme40="KE0TVN - Robert Jackson";
-  var nme41="KE0WHL - Dan Aaronson";
-  var nme42="KF0FPO - David Cowgill";
-  var nme43="KF0GLO - Melissa Coldren";
-  var nme44="KF0QAI - Linda Sutton";
-  var nme45="KI7VGF - Tom Stinson"; 
-  var nme46="N0AYA - Pam Barnett";
-  var nme47="N0BEX - Becky Balfour";
-  var nme48="N0EWG - Gwen Perrachione";
-  var nme49="N0LSE - Laurel Varner";
-  var nme50="N0RWW - Paul Doi";
-  var nme51="N0SKF - Dusty Proctor";
-  var nme52="NR0Q - Matt Chambers";
-  var nme53="NT0C - Ron Harrison";
-  var nme54="W0PLV - Dave Wilson";
-  var nme55="WA9UAA - Rob Meyer";
-  var nme56="WA9Z - Jim Warner";
-  var nme57="WB0ZHB - Chuck Porter";
-  var nme58="";
-  var nme59="";
-  var nme60="";
-  var nme61="";
-  var nme62="";
-</script>
-
-<SCRIPT LANGUAGE="JavaScript">
-function NetChk(){
-  var cnt = 0;
-  var output = document.getElementById("output");
-  var result = ""
-
-  var x = document.getElementById("danet").value;
-  if (x == null || x == "") {
-    alert("Net Name must be filled out");
-    return false;
-  }
-
-  result += document.getElementById("danet").value + "<br>"
-  result += document.getElementById("dadate").value + "<br>"
-
-  if ( document.getElementById("nam1").checked){ result += nme1; ++cnt;
-    if (document.getElementById("ncs1").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam2").checked){ result += nme2; ++cnt;
-    if (document.getElementById("ncs2").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam3").checked){ result += nme3; ++cnt;
-    if (document.getElementById("ncs3").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam4").checked){ result += nme4; ++cnt;
-    if (document.getElementById("ncs4").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam5").checked){ result += nme5; ++cnt;
-    if (document.getElementById("ncs5").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam6").checked){ result += nme6; ++cnt;
-    if (document.getElementById("ncs6").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam7").checked){ result += nme7; ++cnt;
-    if (document.getElementById("ncs7").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam8").checked){ result += nme8; ++cnt;
-    if (document.getElementById("ncs8").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam9").checked){ result += nme9; ++cnt;
-    if (document.getElementById("ncs9").checked){ result += "  NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam10").checked){ result += nme10; ++cnt;
-    if (document.getElementById("ncs10").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam11").checked){ result += nme11; ++cnt;
-    if (document.getElementById("ncs11").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam12").checked){ result += nme12; ++cnt;
-    if (document.getElementById("ncs12").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam13").checked){ result += nme13; ++cnt;
-    if (document.getElementById("ncs13").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam14").checked){ result += nme14; ++cnt;
-    if (document.getElementById("ncs14").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam15").checked){ result += nme15; ++cnt;
-    if (document.getElementById("ncs15").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam16").checked){ result += nme16; ++cnt;
-    if (document.getElementById("ncs16").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam17").checked){ result += nme17; ++cnt;
-    if (document.getElementById("ncs17").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam18").checked){ result += nme18; ++cnt;
-    if (document.getElementById("ncs18").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam19").checked){ result += nme19; ++cnt;
-    if (document.getElementById("ncs19").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam20").checked){ result += nme20; ++cnt;
-    if (document.getElementById("ncs20").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam21").checked){ result += nme21; ++cnt;
-    if (document.getElementById("ncs21").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam22").checked){ result += nme22; ++cnt;
-    if (document.getElementById("ncs22").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam23").checked){ result += nme23; ++cnt;
-    if (document.getElementById("ncs23").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam24").checked){ result += nme24; ++cnt;
-    if (document.getElementById("ncs24").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam25").checked){ result += nme25; ++cnt;
-    if (document.getElementById("ncs25").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam26").checked){ result += nme26; ++cnt;
-    if (document.getElementById("ncs26").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam27").checked){ result += nme27; ++cnt;
-    if (document.getElementById("ncs27").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam28").checked){ result += nme28; ++cnt;
-    if (document.getElementById("ncs28").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam29").checked){ result += nme29; ++cnt;
-    if (document.getElementById("ncs29").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam30").checked){ result += nme30; ++cnt;
-    if (document.getElementById("ncs30").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam31").checked){ result += nme31; ++cnt;
-    if (document.getElementById("ncs31").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam32").checked){ result += nme32; ++cnt;
-    if (document.getElementById("ncs32").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam33").checked){ result += nme33; ++cnt;
-    if (document.getElementById("ncs33").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam34").checked){ result += nme34; ++cnt;
-    if (document.getElementById("ncs34").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam35").checked){ result += nme35; ++cnt;
-    if (document.getElementById("ncs35").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam36").checked){ result += nme36; ++cnt;
-    if (document.getElementById("ncs36").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam37").checked){ result += nme37; ++cnt;
-    if (document.getElementById("ncs37").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam38").checked){ result += nme38; ++cnt;
-    if (document.getElementById("ncs38").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam39").checked){ result += nme39; ++cnt;
-    if (document.getElementById("ncs39").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam40").checked){ result += nme40; ++cnt;
-    if (document.getElementById("ncs40").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam41").checked){ result += nme41; ++cnt;
-    if (document.getElementById("ncs41").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam42").checked){ result += nme42; ++cnt;
-    if (document.getElementById("ncs42").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam43").checked){ result += nme43; ++cnt;
-    if (document.getElementById("ncs43").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam44").checked){ result += nme44; ++cnt;
-    if (document.getElementById("ncs44").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam45").checked){ result += nme45; ++cnt;
-    if (document.getElementById("ncs45").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam46").checked){ result += nme46; ++cnt;
-    if (document.getElementById("ncs46").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam47").checked){ result += nme47; ++cnt;
-    if (document.getElementById("ncs47").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam48").checked){ result += nme48; ++cnt;
-    if (document.getElementById("ncs48").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam49").checked){ result += nme49; ++cnt;
-    if (document.getElementById("ncs49").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam50").checked){ result += nme50; ++cnt;
-    if (document.getElementById("ncs50").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam51").checked){ result += nme51; ++cnt;
-    if (document.getElementById("ncs51").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam52").checked){ result += nme52; ++cnt;
-    if (document.getElementById("ncs52").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam53").checked){ result += nme53; ++cnt;
-    if (document.getElementById("ncs53").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam54").checked){ result += nme54; ++cnt;
-    if (document.getElementById("ncs54").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam55").checked){ result += nme55; ++cnt;
-    if (document.getElementById("ncs55").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam56").checked){ result += nme56; ++cnt;
-    if (document.getElementById("ncs56").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if ( document.getElementById("nam57").checked){ result += nme57; ++cnt;
-    if (document.getElementById("ncs57").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-//  if ( document.getElementById("nam58").checked){ result += nme58; ++cnt;
-//    if (document.getElementById("ncs58").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-//  if ( document.getElementById("nam59").checked){ result += nme59; ++cnt;
-//    if (document.getElementById("ncs59").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-//  if ( document.getElementById("nam60").checked){ result += nme60; ++cnt;
-//    if (document.getElementById("ncs60").checked){ result += " NCS<br>"; } else { result += "<br>"; }}
-
-  if (document.getElementById("cname1").checked){ result += document.getElementById("name1").value; ++cnt; }
-  if (document.getElementById("cname2").checked){ result += document.getElementById("name2").value; ++cnt; }
-  if (document.getElementById("cname3").checked){ result += document.getElementById("name3").value; ++cnt; }
-
-  result += "<br>Counting Net Control, "
-  result += cnt + " Stations checked in" + "<br><br>"
-
-  output.innerHTML = result;
+  <head>
+    <meta charset="utf-8" />
+    <meta name='viewport' content='width=device-width,initial-scale=1' />
+    <title>Nemoarc Net List</title>
+
+<style type="text/css">
+body {
+  background-color: white;
+  color: black;
 }
-</script>
+.column {
+  float: left;
+  width: 33.33%;
+}
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+.callsign {
+  font-family: "Courier New", Courier, monospace;
+  color: darkred;
+}
+</style>
 
-</head>
-<body>
- <h1>NEMOARC Net Call</h1>
-<script src="Ann.txt"></script>
- <div id="output">
-After clicking off the names of those who have checked in, click on the Make Report buuton. The report will show up right here. Left click and highlight all the lines of the report. Rt click and select copy. Open a new email and go to where you want the report in the body of your email. Rt click and select paste.
-<br>
-<br>
+  </head>
 
- </div>
+  <body>
+    <h1>NEMOARC Net Log</h1>
 
-  <form>
-  <fieldset>
+    <div id="output" style="padding-bottom: 1em" >
+      <i>After marking the names of all who have checked in, click on the
+      Make report button. The report will show up right here. Left click and
+      highlight all the lines of the report. Right click and select copy. Open
+      a new email and go to where you want the report in the body of your
+      email.  Right click and select paste.</i>
+    </div>
 
-  <label>Net Name: </label> <input type="text" id="danet"/>  <br>
-  <label>Date: </label> <input type="text" id="dadate"/>  <br><br>
-  <script type="text/javascript">
-    var today = new Date();
-    document.getElementById("dadate").value = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
-  </script>
-  <table>
-  <tr>
-  <td><input type="checkbox" id="nam1"/><label><script>document.write(nme1)</script></label><input type="checkbox" id="ncs1"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam21"/><label><script>document.write(nme21)</script></label><input type="checkbox" id="ncs21"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam41"/><label><script>document.write(nme41)</script></label><input type="checkbox" id="ncs41"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam2"/><label><script>document.write(nme2)</script></label><input type="checkbox" id="ncs2"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam22"/><label><script>document.write(nme22)</script></label><input type="checkbox" id="ncs22"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam42"/><label><script>document.write(nme42)</script></label><input type="checkbox" id="ncs42"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam3"/><label><script>document.write(nme3)</script></label><input type="checkbox" id="ncs3"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam23"/><label><script>document.write(nme23)</script></label><input type="checkbox" id="ncs23"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam43"/><label><script>document.write(nme43)</script></label><input type="checkbox" id="ncs43"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam4"/><label><script>document.write(nme4)</script></label><input type="checkbox" id="ncs4"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam24"/><label><script>document.write(nme24)</script></label><input type="checkbox" id="ncs24"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam44"/><label><script>document.write(nme44)</script></label><input type="checkbox" id="ncs44"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam5"/><label><script>document.write(nme5)</script></label><input type="checkbox" id="ncs5"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam25"/><label><script>document.write(nme25)</script></label><input type="checkbox" id="ncs25"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam45"/><label><script>document.write(nme45)</script></label><input type="checkbox" id="ncs45"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam6"/><label><script>document.write(nme6)</script></label><input type="checkbox" id="ncs6"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam26"/><label><script>document.write(nme26)</script></label><input type="checkbox" id="ncs26"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam46"/><label><script>document.write(nme46)</script></label><input type="checkbox" id="ncs46"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam7"/><label><script>document.write(nme7)</script></label><input type="checkbox" id="ncs7"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam27"/><label><script>document.write(nme27)</script></label><input type="checkbox" id="ncs27"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam47"/><label><script>document.write(nme47)</script></label><input type="checkbox" id="ncs47"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam8"/><label><script>document.write(nme8)</script></label><input type="checkbox" id="ncs8"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam28"/><label><script>document.write(nme28)</script></label><input type="checkbox" id="ncs28"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam48"/><label><script>document.write(nme48)</script></label><input type="checkbox" id="ncs48"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam9"/><label><script>document.write(nme9)</script></label><input type="checkbox" id="ncs9"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam29"/><label><script>document.write(nme29)</script></label><input type="checkbox" id="ncs29"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam49"/><label><script>document.write(nme49)</script></label><input type="checkbox" id="ncs49"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam10"/><label><script>document.write(nme10)</script></label><input type="checkbox" id="ncs10"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam30"/><label><script>document.write(nme30)</script></label><input type="checkbox" id="ncs30"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam50"/><label><script>document.write(nme50)</script></label><input type="checkbox" id="ncs50"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam11"/><label><script>document.write(nme11)</script></label><input type="checkbox" id="ncs11"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam31"/><label><script>document.write(nme31)</script></label><input type="checkbox" id="ncs31"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam51"/><label><script>document.write(nme51)</script></label><input type="checkbox" id="ncs51"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam12"/><label><script>document.write(nme12)</script></label><input type="checkbox" id="ncs12"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam32"/><label><script>document.write(nme32)</script></label><input type="checkbox" id="ncs32"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam52"/><label><script>document.write(nme52)</script></label><input type="checkbox" id="ncs52"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam13"/><label><script>document.write(nme13)</script></label><input type="checkbox" id="ncs13"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam33"/><label><script>document.write(nme33)</script></label><input type="checkbox" id="ncs33"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam53"/><label><script>document.write(nme53)</script></label><input type="checkbox" id="ncs53"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam14"/><label><script>document.write(nme14)</script></label><input type="checkbox" id="ncs14"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam34"/><label><script>document.write(nme34)</script></label><input type="checkbox" id="ncs34"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam54"/><label><script>document.write(nme54)</script></label><input type="checkbox" id="ncs54"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam15"/><label><script>document.write(nme15)</script></label><input type="checkbox" id="ncs15"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam35"/><label><script>document.write(nme35)</script></label><input type="checkbox" id="ncs35"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam55"/><label><script>document.write(nme55)</script></label><input type="checkbox" id="ncs55"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam16"/><label><script>document.write(nme16)</script></label><input type="checkbox" id="ncs16"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam36"/><label><script>document.write(nme36)</script></label><input type="checkbox" id="ncs36"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam56"/><label><script>document.write(nme56)</script></label><input type="checkbox" id="ncs56"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam17"/><label><script>document.write(nme17)</script></label><input type="checkbox" id="ncs17"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam37"/><label><script>document.write(nme37)</script></label><input type="checkbox" id="ncs37"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam57"/><label><script>document.write(nme57)</script></label><input type="checkbox" id="ncs57"/><label>NCS</label></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam18"/><label><script>document.write(nme18)</script></label><input type="checkbox" id="ncs18"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam38"/><label><script>document.write(nme38)</script></label><input type="checkbox" id="ncs38"/><label>NCS</label></td>
-  <td><input type="checkbox" id="cname1"/><input type="text" id="name1" value="Call Sign - Name"></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam19"/><label><script>document.write(nme19)</script></label><input type="checkbox" id="ncs19"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam39"/><label><script>document.write(nme39)</script></label><input type="checkbox" id="ncs39"/><label>NCS</label></td>
-  <td><input type="checkbox" id="cname2"/><input type="text" id="name2" value="Call Sign - Name"></td>
-  </tr>
-  <tr>
-  <td><input type="checkbox" id="nam20"/><label><script>document.write(nme20)</script></label><input type="checkbox" id="ncs20"/><label>NCS</label></td>
-  <td><input type="checkbox" id="nam40"/><label><script>document.write(nme40)</script></label><input type="checkbox" id="ncs40"/><label>NCS</label></td>
-  <td><input type="checkbox" id="cname3"/><input type="text" id="name3" value="Call Sign - Name"></td>
-  </tr>
+    <form>
+      <div style="padding-bottom:1ex" >
+        <label for="netdesc">Net description:</label> <input type="text" value="" id="netdesc" />
+        <label for="netdate">Date:</label> <input type="text" value="" id="netdate" />
+        <button type="button" onclick="makereport()">Make report</button>
+      </div>
 
-  </table>
+      <div class="column" id="col-left"></div>
+      <div class="column" id="col-middle"></div>
+      <div class="column" id="col-right"></div>
 
-  <button type="button" onclick = "NetChk()">Make Report</button>
+      <div style="clear: left; padding-top:1ex">
+        Notes:<br />
+        <textarea id="notes" rows="5" cols="90"></textarea><br />
+      </div>
+    </form>
+    </div>
 
-  </fieldset>
- </form>
-<br>
-</body>
+    <script type="text/javascript">
+      // This is the JavaScript that runs the page.  Add new hams by editing them into this list.
+      // Remove hams by removing their line, or commenting it out.
+      var hams = [
+        [ "AA0V", "Kerry Haley" ],
+        [ "AB0CH", "Craig Comstock" ],
+        [ "AB0DK", "Dave Krueger" ],
+        [ "AC0KY", "Merlin Shelton" ],
+        [ "AC0OK", "Sam Cook" ],
+        [ "AD0B", "David Balfour" ],
+        [ "AE0TF", "Don Bindner" ],
+        [ "AJ0HN", "John Perrachione" ],
+        [ "K0HY", "Chad Varner" ],
+        [ "K0ME", "Lary Ciesemier" ],
+        [ "K0OTP", "Donald Morrison" ],
+        [ "K0PHP", "Chris Swisher" ],
+        [ "K0WXC", "Chris Long" ],
+        [ "KA0BAT", "Jim Farmer" ],
+        // [ "KB0NWT", "Dave Newman" ],
+        [ "KB0QNH", "Victor Farrell" ],
+        // [ "KB0TJH", "Heather Parajara" ],
+        [ "KB0VCN", "Allen Caraway" ],
+        [ "KC0DD", "James Davidson" ],
+        [ "KC0BSH", "Kristina Smith" ],
+        [ "KC0FGX", "Ferrell McClanahan" ],
+        [ "KC0HIX", "Cary Porter" ],
+        [ "KC0IJN", "Dean Lund" ],
+        [ "KC0HPD", "Charles Porter" ],
+        [ "KD0CUD", "John Neeley" ],
+        [ "KD0MKE", "Carl Neighbors" ],
+        [ "KD0PJV", "Clifford Bailey" ],
+        [ "KD0SGM", "Kathy Krueger" ],
+        [ "KD0YTE", "Alex Fleak" ],
+        [ "KE0FWB", "Chris McNabb" ],
+        [ "KE0FOM", "Tom Lloyd" ],
+        [ "KE0HVU", "Russell Shirk" ],
+        [ "KE0IDJ", "Dan King" ],
+        [ "KE0MZF", "Michael Borron" ],
+        [ "KE0OHL", "Louis Veatch" ],
+        [ "KE0PIA", "Richard Nations" ],
+        [ "KE0PMP", "Jordan Malugen" ],
+        [ "KE0PMQ", "John Dungan" ],
+        [ "KE0PMR", "Paul Stidham" ],
+        [ "KE0TVN", "Robert Jackson" ],
+        [ "KE0WHL", "Dan Aaronson" ],
+        [ "KF0FPO", "David Cowgill" ],
+        [ "KF0GLO", "Melissa Coldren" ],
+        [ "KF0TNB", "Joe Treece" ],
+        [ "KF0TNZ", "Daniel Floyd" ],
+        [ "KF0QAI", "Linda Sutton" ],
+        [ "KI7VGF", "Tom Stinson" ], 
+        // [ "N0AYA", "Pam Barnett" ],
+        [ "N0BEX", "Becky Balfour" ],
+        [ "N0EWG", "Gwen Perrachione" ],
+        [ "N0LSE", "Laurel Varner" ],
+        // [ "N0RWW", "Paul Doi" ],
+        [ "N0SKF", "Dusty Proctor" ],
+        // [ "NR0Q", "Matt Chambers" ],
+        [ "NT0C", "Ron Harrison" ],
+        [ "W0PLV", "Dave Wilson" ],
+        [ "WA9UAA", "Rob Meyer" ],
+        [ "WA9Z", "Jim Warner" ],
+        // [ "WB0ZHB", "Chuck Porter" ],
+        [ "", "" ],
+        [ "", "" ],
+        [ "", "" ],
+      ]
+
+      // ---------- We shouldn't need to edit anything below this line. ----------
+
+      // Pre-fill the date field with today's date.
+      var today = new Date();
+      var year = today.getFullYear();
+      var mon = String(today.getMonth()+1).padStart(2,'0');
+      var day = String(today.getDate()).padStart(2,'0');
+      document.getElementById( "netdate" ).value = `${year}-${mon}-${day}`;
+
+      // Comment this in if you want the notes field to clear when you reload the page
+      // document.getElementById("notes").value = "";
+
+      var names_per_col = Math.ceil(hams.length / 3);
+
+      // Use three columns (except for narrow screens, which are combined
+      // into a single column by CSS.
+      const column_ids = [ "col-left", "col-middle", "col-right" ];
+
+      // Fill each column with call signs and names.
+      for( var j = 0; j < column_ids.length; j++ ) {
+        // Clear the column
+        var col_id = document.getElementById(column_ids[j]);
+        col_id.innerHTML = "";
+
+        // And fill it with names
+        for( var idx = j*names_per_col; idx < Math.min((j+1)*names_per_col, hams.length); idx++ ) {
+          var hamid = "ham" + idx;
+          var ncsid = "ncs" + idx;
+          var callid = "call" + idx;
+          var nameid = "name" + idx;
+
+          // If we already have a callsign, then use it.  Otherwise put a text entry field in.
+          if( hams[idx][0] != '' ) {
+            col_id.innerHTML += 
+              `<input type="checkbox" id="${hamid}" /> ` +
+              `<label for="${hamid}"><span class="callsign">${hams[idx][0]}</span> - ${hams[idx][1]}</label>` +
+              ` <input type="checkbox" id="${ncsid}" />` +
+              `<label for="${ncsid}" title="net control station"> NCS</label> <br />`;
+          } else {
+            col_id.innerHTML += 
+              `<input type="checkbox" id="${hamid}" /> ` +
+              `<input type="text" size="6" id="${callid}" class="callsign" /> - <input type="text" size="18" id="${nameid}" />` +
+              ` <input type="checkbox" id="${ncsid}" />` +
+              `<label for="${ncsid}" title="net control station"> NCS</label> <br />`;
+          }
+        }
+      }
+
+      // This function generates our final report.
+      function makereport() {
+        out_id = document.getElementById("output");
+
+        var desc = document.getElementById("netdesc").value;
+        var date = document.getElementById("netdate").value;
+
+        out_id.innerHTML = `<hr />${desc}<br /> ${date}<br><br />`;
+
+        var count = 0;
+        for( var idx = 0; idx < hams.length; idx++ ) {
+          var hamid = "ham" + idx;
+          var ncsid = "ncs" + idx;
+          var callid = "call" + idx;
+          var nameid = "name" + idx;
+
+          // Skip hams that aren't checked present.
+          if( !document.getElementById(hamid).checked ) continue;
+
+          // Check if net control station
+          var ncs = document.getElementById(ncsid).checked ? "*** net control station ***" : "";
+          
+          // If the call is blank then get values from the text input field instead
+          var call = hams[idx][0];
+          var name = hams[idx][1];
+          if( call == '' ) {
+            call = document.getElementById(callid).value;
+            name = document.getElementById(nameid).value;
+          }
+
+          // Append a line to the report.
+          out_id.innerHTML += `<span class="callsign">${call}</span> - ${name} ${ncs}<br />`
+
+          count++;
+         }
+
+         var notes = document.getElementById("notes").value;
+         if( notes != "" ) {
+           out_id.innerHTML += `<br />Notes:<br /> ${notes}<br />`
+         }
+         out_id.innerHTML += `<br />Including net control, ${count} total stations checked in.<hr />`
+      }
+    </script>
+  </body>
 </html>
